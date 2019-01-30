@@ -48,7 +48,7 @@
             <%if (rows != undefined) { %>
                 <% for (var i = 0; i < rows.length; i++) {  %>
                     <%if (rows[i]['close'] != 'true' ) { %>
-                        <a href="#" class="list-group-item"><%=rows[i]['title']%></a>
+                        <a href="/read/readbigmiddle?num=<%=rows[i]['bignum']%>" class="list-group-item"><%=rows[i]['title']%></a>
                     <% } %>
                 <% } %>
             <% } else { %>

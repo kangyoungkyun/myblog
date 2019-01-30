@@ -7,12 +7,30 @@
             <!-- Page Heading -->
             <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">대분류 제목
-                            <small>Secondary Text</small>
+                    <%if (onerow != undefined) { %>
+                        <h1 class="page-header"><%=onerow[0]['title']%>
+                            <small><%=onerow[0]['section']%>강좌</small>
                         </h1>
-                        <div>중분류 제목1
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</div>
-                    </div>
+                        
+                           
+                            <div id="description"></div>
+                            <div>파일: <%=onerow[0]['fileurl']%></div>
+                            
+
+                            <%if (onerow[0]['pay'] == 'false') { %>
+                                <div class="text-right"><span class="label label-success">무료</span>&nbsp<span class="label label-default">₩ <%=onerow[0]['price']%></span></div>
+                            <% } else { %>
+                                <div class="text-right"><span class="label label-info text-right">유료</span>&nbsp<span class="label label-default">₩ <%=onerow[0]['price']%></span></div>
+                            <%} %>
+                            
+                            <script>
+                                    var htmlTag = "<%=onerow[0]['description']%>";  
+                                    var changeToText = $("<div></div>").html(htmlTag).text();
+                                    document.getElementById("description").innerHTML = changeToText;
+                                    //console.log(changeToText); 
+                            </script> 
+                    <% } %>
+                        
                 </div>
                 <!-- /.row -->
         <hr>

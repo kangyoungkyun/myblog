@@ -36,7 +36,7 @@
                                     <div class="thumbnail">
                                         <img src="<%=rows[i]['image']%>" alt="">
                                         <div class="caption">
-                                            <h4 class="pull-right"><%=rows[i]['price']%></h4>
+                                            <h4 class="pull-right">₩ <%=rows[i]['price']%></h4>
                                             <h4><a href="/read/readbigmiddle?num=<%=rows[i]['bignum']%>"><%=rows[i]['title']%></a>
                                             </h4>
         
@@ -62,7 +62,18 @@
 
 
                 <% } else { %>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">￦0</h4>
+                                <h4><a href="#">준비중입니다</a>
+                                </h4>
+                                <p>재미있는 코딩강좌를 준비중입니다. 조금만 기다려주세요.</p>
+                            </div>
 
+                        </div>
+                    </div>
 
                 <% } %>
 

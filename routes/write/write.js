@@ -5,75 +5,80 @@ var multer = require('multer')                          //파일관련 모듈
 var client = require('../../config/mysqlconfig.js');        //mysql 모듈
 loger.info("메모리 로딩 시작. - write.js");
 
-/* 대분류 */
+
+/* 메뉴명 가져오는 쿼리  */
+function selectMenuQuery( callback ) {
+  var sql = 'select * from bigTbl';
+  client.query(sql, function(err, rows, results) {
+      if (err) {
+           callback(err);
+           return;
+      }else{
+        callback(null, rows); 
+      }
+  });
+};
+
+
+/* 대분류 작성*/
 router.get('/write/bigwrite', function (req, res, next) {
-
-  var sql = 'select * from bigTbl';
-  client.query(sql, function (err, rows, results) {
+  selectMenuQuery(function(err, menuResult) {
     if(err){
-      loger.error('대분류 조회 문장에 오류가 있습니다. - /write/bigwrite - /write.js');
-      loger.error(err);
+      loger.info(err);
     }else{
-        if(rows.length > 0){
-            res.render('write/bigwrite',{
-              rows:rows
-            });
-        }else{
-          //대분류 제목이 없을 경우
-          var ud = undefined;
-          res.render('write/bigwrite',{
-            rows:ud
-          });
-        }
+      if(menuResult.length == 0){
+        res.render('write/bigwrite',{
+          rows:undefined
+        });
+      }else{
+        res.render('write/bigwrite',{
+          rows:menuResult
+        });
+      }
     }
   });
+
+
+
 });
 
-/* 중분류 */
+/* 중분류 작성*/
 router.get('/write/middlewrite', function (req, res, next) {
-  var sql = 'select * from bigTbl';
-  client.query(sql, function (err, rows, results) {
+
+  selectMenuQuery(function(err, menuResult) {
     if(err){
-      loger.error('대분류 조회 문장에 오류가 있습니다. - /write/middlewrite - /write.js');
-      loger.error(err);
+      loger.info(err);
     }else{
-        if(rows.length > 0){
-            res.render('write/middlewrite',{
-              rows:rows
-            });
-        }else{
-          //대분류 제목이 없을 경우
-          var ud = undefined;
-          res.render('write/middlewrite',{
-            rows:ud
-          });
-        }
+      if(menuResult.length == 0){
+        res.render('write/middlewrite',{
+          rows:undefined
+        });
+      }else{
+        res.render('write/middlewrite',{
+          rows:menuResult
+        });
+      }
     }
-  });
- 
+  }); 
 });
 
-/* 소분류 글쓰기 */
+/* 소분류 작성 */
 router.get('/write/write', function (req, res, next) {
-  var sql = 'select * from bigTbl';
-  client.query(sql, function (err, rows, results) {
+  selectMenuQuery(function(err, menuResult) {
     if(err){
-      loger.error('대분류 조회 문장에 오류가 있습니다. - /write/write - /write.js');
-      loger.error(err);
+      loger.info(err);
     }else{
-        if(rows.length > 0){
-            res.render('write/write',{
-              rows:rows
-            });
-        }else{
-          //대분류 제목이 없을 경우
-          var ud = undefined;
-          res.render('write/write',{
-            rows:ud
-          });
-        }
+      if(menuResult.length == 0){
+        res.render('write/write',{
+          rows:undefined
+        });
+      }else{
+        res.render('write/write',{
+          rows:menuResult
+        });
+      }
     }
-  });
+  }); 
 });
 
 
@@ -131,10 +136,10 @@ router.post('/write/bigwritesave',function (req, res, next) {
   var price = req.body.price;
   var summernoteContent = req.body.summernoteContent;
   var imagepath = req.body.imagepath;
+  var lang = req.body.lang;
 
-
-  var insertsql = 'insert into bigTbl (title,description,close,pay,mainclose,section,price,fileurl,image) values (?,?,?,?,?,?,?,?,?)';
-  var params = [title, summernoteContent, close, pay , mainclose, section, price,fileurl ,imagepath];
+  var insertsql = 'insert into bigTbl (title,description,close,pay,mainclose,section,price,fileurl,image,lang) values (?,?,?,?,?,?,?,?,?,?)';
+  var params = [title, summernoteContent, close, pay , mainclose, section, price,fileurl ,imagepath,lang];
   client.query(insertsql, params, function (err, rows, fields) {
     if (err) {
       loger.error('대분류 insert 쿼리에 오류가 있습니다. - /write/bigwritesave - write.js');

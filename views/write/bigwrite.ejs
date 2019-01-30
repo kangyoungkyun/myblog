@@ -15,12 +15,27 @@
                                     <option>글</option>
                             </select>
                     </div>
+                    
+                    <div class="col-md-2">
+                        <select class="form-control" id="lang">
+                                <option>언어</option>
+                                <option>JavaScript</option>
+                                <option>Node.js</option>
+                                <option>Swift</option>
+                                <option>ios앱만들기(swift)</option>
+                                <option>ios앱만들기(Objective-c)</option>
+                                <option>Objective-c</option>
+                                <option>Mysql</option>
+                                <option>데이터베이스</option>
+                                <option>Android</option>
+                        </select>
+                    </div>
 
                     <div class="col-md-2">
                         <label class="checkbox-inline"><input type="checkbox" value="" id="mainclose">메인비게시</label>
                     </div><!-- /col-md-2 -->
                     
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                             <input type="text" id = "fileurl" class="form-control" placeholder="파일url" value="#">
                     </div><!-- /col-md-4 -->
 
@@ -132,6 +147,9 @@
         var langSelect = document.getElementById("section");               //분류
         //var sectionvalue = langSelect.options[langSelect.selectedIndex].value;
         var sectiontext = langSelect.options[langSelect.selectedIndex].text;
+        
+        var langSelect2 = document.getElementById("lang");               //분류
+        var lang = langSelect2.options[langSelect2.selectedIndex].text;
         var fileurl = $("#fileurl").val();                                  //파일url
         var title = $("#title").val();                                      //제목
         var mainclose = $("#mainclose").is(":checked");                     //메인비공개
@@ -157,7 +175,8 @@
                     pay: pay,
                     price: price,
                     summernoteContent: summernoteContent,
-                    imagepath:imagepath
+                    imagepath:imagepath,
+                    lang:lang
                 },
                 success: function (data) {
                     if (data['result'] == 'success') {

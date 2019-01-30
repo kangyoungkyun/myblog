@@ -7,6 +7,7 @@ loger.info("메모리 로딩 시작. - index.js");
 
 /* 메인화면 */
 router.get('/', function (req, res, next) {
+  loger.info("/ 메인화면 진입. - index.js");
   var sql = 'select * from bigTbl';
   client.query(sql, function (err, rows, results) {
     if(err){

@@ -5,68 +5,68 @@ var client = require('../../config/mysqlconfig.js');        //mysql 모듈
 loger.info("메모리 로딩 시작. - read.js");
 
 
+/* 메뉴명 가져오는 쿼리  */
+function selectMenuQuery( callback ) {
+  var sql = 'select * from bigTbl';
+  client.query(sql, function(err, rows, results) {
+      if (err) {
+           callback(err);
+           return;
+      }else{
+        callback(null, rows); 
+      }
+  });
+};
+
+
 /* 중분류 보기 */
 router.get('/read/readbigmiddle', function (req, res, next) {
 
-  var bignum = req.query.num;
+  var bignum = req.query.num;       //대분류 pk 값
   loger.info(bignum);
-
-  var sql = 'select * from bigTbl';
-  client.query(sql, function (err, rows, results) {
-    if(err){
-      loger.error('대분류 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js');
-      loger.error(err);
-    }else{
-
-      if(rows.length > 0){
-        var sql2 = 'select * from bigTbl where bignum = ?';
-        client.query(sql2, bignum,function (err, onerow, results) {
-          if(err){
-            loger.error('대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js');
-            loger.error(err);
-          }else{
-            res.render('read/readbigmiddle',{
-              rows:rows,
-              onerow:onerow
+  var sql2 = 'select * from bigTbl where bignum = ?';
+  client.query(sql2, [bignum], function (err2, onerow, results) {
+    if (err2) {
+      loger.error('대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js');
+      loger.error(err2);
+    } else {
+      
+      selectMenuQuery(function (err, menuResult) {
+        if (err) {
+          loger.info(err);
+        } else {
+          if (menuResult.length == 0) {
+            res.render('read/readbigmiddle', {
+              rows: undefined,
+              onerow: onerow
+            });
+          } else {
+            res.render('read/readbigmiddle', {
+              rows: menuResult,
+              onerow: onerow
             });
           }
-        })
-
-    }else{
-      //대분류 제목이 없을 경우
-      var ud = undefined;
-      res.render('read/readbigmiddle',{
-        rows:ud,
-        onerow:ud
+        }
       });
     }
-    }
   });
-
-
 });
-
-
 
 /* 포스트 보기 */
 router.get('/read/readpost', function (req, res, next) {
-  var sql = 'select * from bigTbl';
-  client.query(sql, function (err, rows, results) {
+  selectMenuQuery(function(err, menuResult) {
     if(err){
-      loger.error('대분류 조회 문장에 오류가 있습니다. - /read/readpost - /read.js');
-      loger.error(err);
+      loger.info(err);
     }else{
-        if(rows.length > 0){
-            res.render('read/readpost',{
-              rows:rows
-            });
-        }else{
-          //대분류 제목이 없을 경우
-          var ud = undefined;
-          res.render('read/readpost',{
-            rows:ud
-          });
-        }
+      if(menuResult.length == 0){
+        res.render('read/readpost',{
+          rows:undefined
+        });
+      }else{
+        res.render('read/readpost',{
+          rows:menuResult
+        });
+      }
     }
   });
 });

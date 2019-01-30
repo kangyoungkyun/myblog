@@ -47,10 +47,26 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use(function(req, res, next) {
-loger.info("공통페이지 진입 - app.js");
-  
+
+  loger.info("공통페이지 진입 - app.js");
   var sessionID = req.sessionID;                                  // 세션 ID
   loger.info("세션 아이디 : " + sessionID);
+
+  // var sql = 'select * from bigTbl';
+  // client.query(sql, function (err, rows, results) {
+  //   if(err){
+  //     loger.error('대분류 조회 문장에 오류가 있습니다.  - /app.js');
+  //     loger.error(err);
+  //   }else{
+  //       if(rows.length > 0){
+  //         res.locals.bigtitle = rows;
+  //       }else{
+  //         //대분류 제목이 없을 경우
+  //         var ud = undefined;
+  //         res.locals.bigtitle = ud;
+  //       }
+  //   }
+  // });
 
 next();
 });

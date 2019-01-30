@@ -7,18 +7,75 @@ loger.info("메모리 로딩 시작. - write.js");
 
 /* 대분류 */
 router.get('/write/bigwrite', function (req, res, next) {
-  res.render('write/bigwrite');
+
+  var sql = 'select * from bigTbl';
+  client.query(sql, function (err, rows, results) {
+    if(err){
+      loger.error('대분류 조회 문장에 오류가 있습니다. - /write/bigwrite - /write.js');
+      loger.error(err);
+    }else{
+        if(rows.length > 0){
+            res.render('write/bigwrite',{
+              rows:rows
+            });
+        }else{
+          //대분류 제목이 없을 경우
+          var ud = undefined;
+          res.render('write/bigwrite',{
+            rows:ud
+          });
+        }
+    }
+  });
 });
 
 /* 중분류 */
 router.get('/write/middlewrite', function (req, res, next) {
-  res.render('write/middlewrite');
+  var sql = 'select * from bigTbl';
+  client.query(sql, function (err, rows, results) {
+    if(err){
+      loger.error('대분류 조회 문장에 오류가 있습니다. - /write/middlewrite - /write.js');
+      loger.error(err);
+    }else{
+        if(rows.length > 0){
+            res.render('write/middlewrite',{
+              rows:rows
+            });
+        }else{
+          //대분류 제목이 없을 경우
+          var ud = undefined;
+          res.render('write/middlewrite',{
+            rows:ud
+          });
+        }
+    }
+  });
+ 
 });
 
 /* 소분류 글쓰기 */
 router.get('/write/write', function (req, res, next) {
-  res.render('write/write');
+  var sql = 'select * from bigTbl';
+  client.query(sql, function (err, rows, results) {
+    if(err){
+      loger.error('대분류 조회 문장에 오류가 있습니다. - /write/write - /write.js');
+      loger.error(err);
+    }else{
+        if(rows.length > 0){
+            res.render('write/write',{
+              rows:rows
+            });
+        }else{
+          //대분류 제목이 없을 경우
+          var ud = undefined;
+          res.render('write/write',{
+            rows:ud
+          });
+        }
+    }
+  });
 });
+
 
 //파일 저장위치와 파일이름 설정
 var storage = multer.diskStorage({
@@ -59,7 +116,7 @@ router.post('/write/bigwritesaveimage', upload.single('fileupload') ,function (r
   var nowdate5 = nowdate4.replace('-','');
   var now = nowdate5.replace(':','');
 
-  res.send({ result: 'success' , 'path' : 'public/bigwriteimages/'+ now + '.png' });
+  res.send({ result: 'success' , 'path' : './bigwriteimages/'+ now + '.png' });
 });
 
 /* 대분류 저장 액션 */

@@ -1,0 +1,151 @@
+
+    <% include ../head %>
+
+    <% include ../header %>
+
+    <div class="col-md-9">
+            <br>
+                <div class="row"> 
+                  <h2>수강내용</h2><br><br>
+                    <div class="col-md-12">
+                            <table class="table text-center">
+                                    <thead>
+                                      <tr>
+                                        <th class="text-center">상품</th>
+                                        <th class="text-center">가격</th>
+                                        <th class="text-center">수량</th>
+                                        <th class="text-center">합계</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>아이폰 개발</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>0(부가세 포함)</td>
+                                      </tr>
+                                
+                                    </tbody>
+                                  </table>
+                    </div>
+                </div>
+
+                <br>
+                <br> 
+                
+                <div class="row">
+                        <h2 class="page-header">결제정보</h2>
+                        <div class="col-md-1"></div>
+
+
+                        <div class="col-md-3">
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">신용카드</label>
+                                </div>
+                                <br>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">카카오페이</label>
+                                </div>
+                                <br>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">무통장입금</label>
+                                </div>
+                        </div>
+                        <div class="col-md-8">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">안내</div>
+                                    <div class="panel-body">신용카드로 간편하게 구매하세요!</div>
+                                </div>
+                        </div>
+                </div>
+
+            <br>
+            <br> 
+            <br>
+            <br>
+            <div class="row">
+                <div class="text-center">
+                    <button type="button" class="btn btn-success btn-md text-center"  id = "saveBtn">결재진행</button>
+                    
+                </div>
+            </div>
+
+    </div>
+
+
+    <% include ../footer %>
+ 
+    <script>
+ $(document).ready(function(){
+    //저장버튼 클릭
+    $(document).on('click', '#saveBtn', function () {
+        //파일업로드 사진 유무 확인
+        var fileupload = $("#fileupload").val();      
+        if(fileupload == null || fileupload == undefined || fileupload == ''){
+            alert("사진을 확인해주세요.");
+        }else{
+            saveImage();
+        }        
+      });
+ });
+
+
+    //데이터 저장
+    function saveContent(imagepath) {
+        //값 가져오기
+        var langSelect = document.getElementById("section");               //분류
+        //var sectionvalue = langSelect.options[langSelect.selectedIndex].value;
+        var sectiontext = langSelect.options[langSelect.selectedIndex].text;
+        
+        var langSelect2 = document.getElementById("lang");               //분류
+        var lang = langSelect2.options[langSelect2.selectedIndex].text;
+        var fileurl = $("#fileurl").val();                                  //파일url
+        var title = $("#title").val();                                      //제목
+        var mainclose = $("#mainclose").is(":checked");                     //메인비공개
+        var close = $("#close").is(":checked");                             //비공개
+        var pay = $("#pay").is(":checked");                                 //유료
+        var price = $("#price").val();                                       //가격
+        var summernoteContent = $('#summernote').summernote('code');         //썸머노트(설명)
+        var imagepath = imagepath;
+        var chkresult = checkContent(sectiontext, fileurl, title);
+
+        //유효성 검사가 완료되었으면
+        if (chkresult) {
+            $.ajax({
+                url: '/write/bigwritesave',
+                dataType: 'json',
+                type: 'post',
+                data: {
+                    sectiontext: sectiontext,
+                    fileurl: fileurl,
+                    title: title,
+                    mainclose: mainclose,
+                    close: close,
+                    pay: pay,
+                    price: price,
+                    summernoteContent: summernoteContent,
+                    imagepath:imagepath,
+                    lang:lang
+                },
+                success: function (data) {
+                    if (data['result'] == 'success') {
+                        alert(data['tocken']);
+                        location.reload();
+                    }else if(data['result'] == 'fail'){
+                        alert(data['tocken']);
+                    }
+                },
+                error: function (jqXHR, textStatus, err) {
+                    //show error message
+                    alert('죄송합니다. 작업중 오류가 발생했습니다.' + "상태 : " + textStatus + ', error : ' + err);
+                }
+            });
+        }
+    }
+
+
+    </script>
+                 
+  </body>
+
+</html>

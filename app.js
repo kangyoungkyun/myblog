@@ -15,7 +15,7 @@ var options = {                                         //session을 mysql db에
   host	: 'localhost',
   port	: 3306,
   user	: 'root',
-  password: '1111',		                              //데이터베이스 접근 비밀번호
+  password: 'eorn1145',		                              //데이터베이스 접근 비밀번호
   database: 'mydb2'		                                  //데이터베이스의 이름
   };
   
@@ -57,20 +57,21 @@ next();
 
 //사용자 정의 모듈 추출
 var indexRouter = require('./routes/index'); 
-var writeRouter = require('./routes/write/write');    //글쓰기 /routes폴더 / write 폴더 / write.js
-var readRouter = require('./routes/read/read');       //글읽기 /routes폴더 / read 폴더 / read.js
+var writeRouter = require('./routes/write/write');         //글쓰기 /routes폴더 / write 폴더 / write.js
+var readRouter = require('./routes/read/read');            //글읽기 /routes폴더 / read 폴더 / read.js
+var applyRouter = require('./routes/apply/apply');        //글읽기 /routes폴더 / apply 폴더 / apply.js
 
 //session을 사용할 라우터 셋팅
 app.use(indexRouter);
 app.use(writeRouter);
 app.use(readRouter);
+app.use(applyRouter);
 
 
-//라우터 미들웨어를 설정한다.
-app.use('/', indexRouter);
-//write으로 들어오는 url 은 위의 writeRouter에서 처리
-app.use('/write', writeRouter);
+app.use('/', indexRouter);                    //라우터 미들웨어를 설정한다.
+app.use('/write', writeRouter);               //write으로 들어오는 url 은 위의 writeRouter에서 처리
 app.use('/read', readRouter);
+app.use('/apply', applyRouter);
 
 
 

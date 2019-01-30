@@ -27,31 +27,41 @@
                 <%if (rows != undefined) { %>
                     <% for (var i = 0; i < rows.length; i++) {  %>
 
-                        <div class="col-sm-4 col-lg-4 col-md-4">
-                            <div class="thumbnail">
-                                <img src="<%=rows[i]['image']%>" alt="">
-                                <div class="caption">
-                                    <h4 class="pull-right"><%=rows[i]['price']%></h4>
-                                    <h4><a href="#"><%=rows[i]['title']%></a>
-                                    </h4>
+                        <%if (rows[i]['close'] != 'true' ) { %>
 
-                                    <p id="description<%=i%>"></p>
+                            <%if (rows[i]['mainclose'] == 'true' ) { %>
 
-                                </div>
+                            <% } else { %>
+                            <div class="col-sm-4 col-lg-4 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="<%=rows[i]['image']%>" alt="">
+                                        <div class="caption">
+                                            <h4 class="pull-right"><%=rows[i]['price']%></h4>
+                                            <h4><a href="#"><%=rows[i]['title']%></a>
+                                            </h4>
+        
+                                            <p id="description<%=i%>"></p>
+        
+                                        </div>
+                                    </div>
+                                    <script>
+                                            var htmlTag = "<%=rows[i]['description']%>";  
+                                            var changeToText = $("<div></div>").html(htmlTag).text();
+                                            document.getElementById("description" + "<%=i%>").innerHTML = changeToText;
+                                            //console.log(changeToText); 
+                                    </script> 
                             </div>
-                            <script>
-                                    var htmlTag = "<%=rows[i]['description']%>";  
-                                    var changeToText = $("<div></div>").html(htmlTag).text();
-                                    document.getElementById("description" + "<%=i%>").innerHTML = changeToText;
-                                    //console.log(changeToText); 
-                            </script> 
-                        </div>
+
+
+                            <% } %>
+
+                        
+                        <% } %>
 
                     <% } %>
 
 
                 <% } else { %>
-
 
 
                 <% } %>

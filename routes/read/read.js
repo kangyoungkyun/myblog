@@ -6,19 +6,51 @@ loger.info("메모리 로딩 시작. - read.js");
 
 
 /* 중분류 보기 */
-router.get('/read/readmiddle', function (req, res, next) {
-
-  res.render('read/readmiddle');
-
+router.get('/read/readbigmiddle', function (req, res, next) {
+  var sql = 'select * from bigTbl';
+  client.query(sql, function (err, rows, results) {
+    if(err){
+      loger.error('대분류 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js');
+      loger.error(err);
+    }else{
+        if(rows.length > 0){
+            res.render('read/readbigmiddle',{
+              rows:rows
+            });
+        }else{
+          //대분류 제목이 없을 경우
+          var ud = undefined;
+          res.render('read/readbigmiddle',{
+            rows:ud
+          });
+        }
+    }
+  });
 });
 
 
 
 /* 포스트 보기 */
 router.get('/read/readpost', function (req, res, next) {
-
-  res.render('read/readpost');
-
+  var sql = 'select * from bigTbl';
+  client.query(sql, function (err, rows, results) {
+    if(err){
+      loger.error('대분류 조회 문장에 오류가 있습니다. - /read/readpost - /read.js');
+      loger.error(err);
+    }else{
+        if(rows.length > 0){
+            res.render('read/readpost',{
+              rows:rows
+            });
+        }else{
+          //대분류 제목이 없을 경우
+          var ud = undefined;
+          res.render('read/readpost',{
+            rows:ud
+          });
+        }
+    }
+  });
 });
 
 

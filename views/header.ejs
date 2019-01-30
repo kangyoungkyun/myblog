@@ -15,7 +15,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                   <li>
-                      <a href="/read/readmiddle">중분류읽기</a>
+                      <a href="/read/readbigmiddle">중분류읽기</a>
                   </li>
                   <li>
                       <a href="/read/readpost">글읽기</a>
@@ -47,7 +47,9 @@
 
             <%if (rows != undefined) { %>
                 <% for (var i = 0; i < rows.length; i++) {  %>
-                    <a href="#" class="list-group-item"><%=rows[i]['title']%></a>
+                    <%if (rows[i]['close'] != 'true' ) { %>
+                        <a href="#" class="list-group-item"><%=rows[i]['title']%></a>
+                    <% } %>
                 <% } %>
             <% } else { %>
                 <a href="#" class="list-group-item">x</a>

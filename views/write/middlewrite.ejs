@@ -9,23 +9,26 @@
         <br>
             
                 <div class="row"> 
-                    <div class="col-md-2">
-                            <select class="form-control" id="category">
-                                    <option>대분류</option>
-                                    <option>ios</option>
-                                    <option>nodejs</option>
-                                    <option>objective c</option>
-                                    <option>js</option>
+                    <div class="col-md-4">
+                        <select title=“대분류” class="form-control" id="bigtitle">
+                                <option>대분류</option>
+                                <%if (rows != undefined) { %>
+                                    <% for (var i = 0; i < rows.length; i++) {  %>
+                                        <option value="<%= rows[i]['bignum'] %>"><%=rows[i]['title']%></option>
+                                    <% } %>
+                                <% } else { %>
+                                    <option value="">강좌가 없습니다</option>
+                                <% } %>
                             </select>
                     </div><!-- /col-md-2 -->
 
 
-                    <div class="col-md-8">
-                    <input type="text" id = "title" class="form-control" aria-label="중분류 제목" placeholder="중분류 제목">
+                    <div class="col-md-6">
+                    <input type="text" id = "middletitle" class="form-control" aria-label="중분류 제목" placeholder="중분류 제목">
                     </div>
 
                     <div class="col-md-2">
-                            <label class="checkbox-inline"><input type="checkbox" value="">비공개</label>
+                            <label class="checkbox-inline"><input type="checkbox" id="close">비공개</label>
                     </div><!-- /col-md-2 -->
 
                 </div><!-- row -->
@@ -39,7 +42,7 @@
             <br>
             <div class="row">
                 <div class="text-center">
-                    <button type="button" class="btn btn-success btn-md text-center" onclick="showContent();">작성</button>
+                    <button type="button" class="btn btn-success btn-md text-center" id = "saveBtn">작성</button>
                     
                 </div>
             </div>
@@ -63,8 +66,67 @@
     <% include ../footer %>
  
     <script>
-        function showContent() {
-            $('.output').html($('#summernote').summernote('code'));
+    $(document).ready(function(){
+        //저장버튼 클릭
+        $(document).on('click', '#saveBtn', function () {
+            saveContent();
+        });
+    });
+
+
+    //데이터 저장
+    function saveContent() {
+            //값 가져오기
+            var bigSelect = document.getElementById("bigtitle");               //대분류 pk
+            var bignum = bigSelect.options[bigSelect.selectedIndex].value;
+            var bigtext = bigSelect.options[bigSelect.selectedIndex].text;
+            
+            var middletitle = $("#middletitle").val();                          //중분류제목
+            var close = $("#close").is(":checked");                             //비공개
+            var summernoteContent = $('#summernote').summernote('code');        //썸머노트(중분류설명)
+
+            var chkresult = checkContent(bigtext, middletitle);
+            //유효성 검사가 완료되었으면
+            if (chkresult) {
+                $.ajax({
+                    url: '/write/middlewritesave',
+                    dataType: 'json',
+                    type: 'post',
+                    data: {
+                        bignum: bignum,
+                        middletitle: middletitle,
+                        close: close,
+                        summernoteContent: summernoteContent
+                    },
+                    success: function (data) {
+                        if (data['result'] == 'success') {
+                            alert(data['tocken']);
+                            location.reload();
+                        }else if(data['result'] == 'fail'){
+                            alert(data['tocken']);
+                        }
+                    },
+                    error: function (jqXHR, textStatus, err) {
+                        //show error message
+                        alert('죄송합니다. 작업중 오류가 발생했습니다.' + "상태 : " + textStatus + ', error : ' + err);
+                    }
+                });
+            }
+        }
+   
+
+        //유효성 체크 -  유효성 검사가 완료되면 true를 리턴한다.
+        function checkContent(bigtext, middletitle) {
+            if (bigtext == '대분류') {
+                alert('분류를 선택해주세요.');
+                return false;
+            }
+
+            if (middletitle == null || middletitle == '' || middletitle == undefined) {
+                alert('제목을 작성해주세요.');
+                return false;
+            }
+            return true;
         }
     </script>
                  

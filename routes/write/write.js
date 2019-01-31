@@ -143,6 +143,31 @@ router.post('/write/bigwritesave',function (req, res, next) {
 });
 
 
+/* 중분류 저장 액션 */
+router.post('/write/middlewritesave',function (req, res, next) {
+  loger.info('중분류 저장 진입  - /write/middlewritesave - write.js');
+
+  var bignum = req.body.bignum;                               //대분류 pk
+  var middletitle = req.body.middletitle;                     //중분류 타이틀
+  var close = req.body.close;                                 //비공개
+  var summernoteContent = req.body.summernoteContent;         //설명
+
+  var insertsql = 'insert into middleTbl (title,description,close,bignum) values (?,?,?,?)';
+  var params = [middletitle, summernoteContent, close, bignum];
+  client.query(insertsql, params, function (err, rows, fields) {
+    if (err) {
+      loger.error('중분류 insert 쿼리에 오류가 있습니다. - /write/middlewritesave - write.js');
+      loger.error(err);
+    } else {
+      if(rows.insertId){
+        res.send({ result: 'success' , tocken:'저장성공'});
+      }else{
+        res.send({ result: 'fail' , tocken:'저장실패'});
+      }
+    }
+  });
+});
+
 module.exports = router;
 loger.info("메모리 로딩 완료. - write.js");
 

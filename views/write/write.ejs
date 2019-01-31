@@ -10,12 +10,15 @@
             
                 <div class="row"> 
                     <div class="col-md-2">
-                            <select class="form-control" id="category">
+                            <select title=“대분류” class="form-control" id="bigtitle">
                                     <option>대분류</option>
-                                    <option>ios</option>
-                                    <option>nodejs</option>
-                                    <option>objective c</option>
-                                    <option>js</option>
+                                    <%if (rows != undefined) { %>
+                                        <% for (var i = 0; i < rows.length; i++) {  %>
+                                            <option value="<%= rows[i]['bignum'] %>"><%=rows[i]['title']%></option>
+                                        <% } %>
+                                    <% } else { %>
+                                        <option value="">강좌가 없습니다</option>
+                                    <% } %>
                             </select>
                     </div><!-- /col-md-2 -->
 

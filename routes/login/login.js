@@ -46,7 +46,25 @@ router.get('/login/usersign', function (req, res, next) {
     });
   });
 
-
+/* 비번찾기 화면 보기 */
+router.get('/login/idpwfind', function (req, res, next) {
+    //대분류 메뉴명 가져옴
+    selectMenuQuery(function(err, menuResult) {
+      if(err){
+        loger.info(err);
+      }else{
+        if(menuResult.length == 0){
+          res.render('login/idpwfind',{
+            rows:undefined
+          });
+        }else{
+          res.render('login/idpwfind',{
+            rows:menuResult
+          });
+        }
+      }
+    });
+  });
 
 module.exports = router;
 loger.info("메모리 로딩 완료. - login.js");

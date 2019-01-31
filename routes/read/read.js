@@ -10,6 +10,7 @@ loger.info("메모리 로딩 시작. - read.js");
 router.get('/read/readbigmiddle', function (req, res, next) {
 
   var bignum = req.query.num;       //대분류 pk 값
+
   loger.info(bignum);
   var sql2 = 'select * from bigTbl where bignum = ?';
   client.query(sql2, [bignum], function (err2, onerow, results) {
@@ -28,9 +29,28 @@ router.get('/read/readbigmiddle', function (req, res, next) {
               onerow: onerow
             });
           } else {
-            res.render('read/readbigmiddle', {
-              rows: menuResult,
-              onerow: onerow
+
+            var sql3 = 'select * from middleTbl where bignum = ?';
+            client.query(sql3, [bignum], function (err3, middlerows, results) {
+              if (err3) {
+                loger.error('중분류 글 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js');
+                loger.error(err3);
+              } else { 
+                //중분류 글 존재.
+                if(middlerows.length > 0){
+                  res.render('read/readbigmiddle', {
+                    rows: menuResult,
+                    onerow: onerow,
+                    middlerows:middlerows
+                  });
+                }else{
+                  res.render('read/readbigmiddle', {
+                    rows: menuResult,
+                    onerow: onerow,
+                    middlerows:undefined
+                  });
+                }
+              }
             });
           }
         }
@@ -38,6 +58,7 @@ router.get('/read/readbigmiddle', function (req, res, next) {
     }
   });
 });
+
 
 /* 포스트 보기 */
 router.get('/read/readpost', function (req, res, next) {

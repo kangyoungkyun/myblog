@@ -2789,3 +2789,2274 @@
 2019-01-30 17:00:02.127 +0900 - info: 세션 아이디 : DzfNcd3kkKOA-v37smtIHBArIBAiRuqy
 2019-01-30 17:00:02.184 +0900 - info: 공통페이지 진입 - app.js
 2019-01-30 17:00:02.185 +0900 - info: 세션 아이디 : DzfNcd3kkKOA-v37smtIHBArIBAiRuqy
+2019-01-30 22:16:26.194 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 22:16:26.199 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 22:16:26.248 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 22:16:26.249 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 22:16:26.250 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 22:16:26.250 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 22:16:26.257 +0900 - info: 서버 작동. - index.js
+2019-01-30 22:17:05.544 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:17:05.544 +0900 - info: 세션 아이디 : iWMgcK6ianL1-UG3QTXJ28_sBK4RC5Br
+2019-01-30 22:18:22.332 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 22:18:22.337 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 22:18:22.385 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 22:18:22.386 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 22:18:22.387 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 22:18:22.387 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 22:18:22.394 +0900 - info: 서버 작동. - index.js
+2019-01-30 22:21:52.105 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 22:21:52.110 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 22:21:52.159 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 22:21:52.160 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 22:21:52.162 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 22:21:52.162 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 22:21:52.168 +0900 - info: 서버 작동. - index.js
+2019-01-30 22:23:39.179 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 22:23:39.183 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 22:23:39.216 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 22:23:39.217 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 22:23:39.219 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 22:23:39.219 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 22:23:39.227 +0900 - info: 서버 작동. - index.js
+2019-01-30 22:23:40.720 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:23:40.720 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:23:40.721 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 22:23:41.135 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:23:41.135 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:23:41.252 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:23:41.253 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:23:41.274 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:23:41.274 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:23:41.667 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:23:41.667 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:24:21.189 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:24:21.190 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:25:02.411 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:25:02.411 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:25:02.412 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 22:25:02.738 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:25:02.738 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:25:02.769 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:25:02.769 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:25:02.802 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:25:02.802 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:26:09.771 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:26:09.771 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:26:09.771 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 22:26:20.073 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:26:20.073 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:26:59.962 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:26:59.963 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:27:14.870 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:27:14.870 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:29:22.169 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:29:22.169 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:32:18.037 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 22:32:18.043 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 22:32:18.115 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 22:32:18.116 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 22:32:18.118 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 22:32:18.118 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 22:32:18.125 +0900 - info: 서버 작동. - index.js
+2019-01-30 22:32:23.129 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:32:23.130 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:33:18.881 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:33:18.881 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:34:34.456 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:34:34.456 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:34:34.588 +0900 - info: 대분류 이미지 저장 진입  - /write/bigwritesaveimage - write.js 
+2019-01-30 22:34:34.636 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:34:34.636 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:34:34.636 +0900 - info: 대분류 저장 진입  - /write/bigwritesave - write.js
+2019-01-30 22:34:36.323 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:34:36.324 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:34:40.522 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:34:40.522 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:34:40.523 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 22:34:57.791 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:34:57.791 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:34:57.792 +0900 - info: 1
+2019-01-30 22:34:58.077 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:34:58.077 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:34:58.192 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:34:58.193 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:34:58.239 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:34:58.240 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:35:04.809 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:35:04.810 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:35:04.810 +0900 - info: 1
+2019-01-30 22:35:04.931 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:35:04.932 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:35:04.960 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:35:04.960 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:35:04.987 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:35:04.988 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:35:06.721 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:35:06.721 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:35:06.721 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 22:35:50.072 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:35:50.072 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:35:50.072 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 22:36:00.514 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:36:00.514 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:36:00.515 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 22:36:05.909 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:36:05.910 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:36:05.910 +0900 - info: 1
+2019-01-30 22:36:06.043 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:36:06.044 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:36:06.073 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:36:06.073 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:36:06.099 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:36:06.100 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:37:17.313 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:37:17.313 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:37:17.313 +0900 - info: 1
+2019-01-30 22:37:17.631 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:37:17.631 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:37:17.672 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:37:17.673 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:37:17.738 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:37:17.738 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:39:25.765 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:39:25.765 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:39:25.766 +0900 - info: 1
+2019-01-30 22:39:26.000 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:39:26.000 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:39:26.064 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:39:26.064 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:39:26.123 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:39:26.123 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:39:33.429 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:39:33.430 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:39:33.430 +0900 - info: 1
+2019-01-30 22:39:33.544 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:39:33.544 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:39:33.576 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:39:33.576 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:39:33.602 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:39:33.603 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:47:11.020 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 22:47:11.026 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 22:47:11.098 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 22:47:11.099 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 22:47:11.101 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 22:47:11.101 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 22:47:11.107 +0900 - info: 서버 작동. - index.js
+2019-01-30 22:47:18.248 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:47:18.249 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:47:18.250 +0900 - info: 1
+2019-01-30 22:47:18.548 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:47:18.548 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:47:18.589 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:47:18.590 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:47:18.647 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:47:18.647 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:47:20.179 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:47:20.179 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:47:22.098 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:47:22.099 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:47:29.986 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:47:29.986 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:48:47.284 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 22:48:47.289 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 22:48:47.326 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 22:48:47.327 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 22:48:47.328 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 22:48:47.328 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 22:48:47.337 +0900 - info: 서버 작동. - index.js
+2019-01-30 22:48:49.576 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:48:49.576 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:48:49.577 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 22:48:49.577 +0900 - info: 결과는?
+2019-01-30 22:48:49.578 +0900 - info: 
+2019-01-30 22:50:12.325 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 22:50:12.330 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 22:50:12.362 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 22:50:12.363 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 22:50:12.364 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 22:50:12.365 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 22:50:12.372 +0900 - info: 서버 작동. - index.js
+2019-01-30 22:50:15.559 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:50:15.559 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:50:15.560 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 22:50:15.561 +0900 - info: 결과는?
+2019-01-30 22:50:15.561 +0900 - info: 
+2019-01-30 22:50:18.862 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:50:18.862 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:50:18.863 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 22:50:18.863 +0900 - info: 결과는?
+2019-01-30 22:50:18.863 +0900 - info: 
+2019-01-30 22:50:24.926 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:50:24.927 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:50:27.197 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:50:27.198 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:50:27.199 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 22:50:27.200 +0900 - info: 결과는?
+2019-01-30 22:50:27.200 +0900 - info: 
+2019-01-30 22:51:34.033 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 22:51:34.039 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 22:51:34.080 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 22:51:34.081 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 22:51:34.082 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 22:51:34.082 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 22:51:34.088 +0900 - info: 서버 작동. - index.js
+2019-01-30 22:51:35.911 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:51:35.912 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:51:35.912 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 22:51:35.913 +0900 - info: 결과는?
+2019-01-30 22:51:35.913 +0900 - info: 
+2019-01-30 22:56:44.307 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 22:56:44.311 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 22:56:44.343 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 22:56:44.344 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 22:56:44.345 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 22:56:44.345 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 22:56:44.353 +0900 - info: 서버 작동. - index.js
+2019-01-30 22:56:57.729 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:56:57.729 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:56:57.730 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 22:56:57.730 +0900 - info: 결과는?
+2019-01-30 22:56:57.731 +0900 - info: 
+2019-01-30 22:56:57.745 +0900 - info: 제목존재
+2019-01-30 22:58:52.891 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 22:58:52.896 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 22:58:52.948 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 22:58:52.949 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 22:58:52.950 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 22:58:52.951 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 22:58:52.957 +0900 - info: 서버 작동. - index.js
+2019-01-30 22:58:57.490 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:58:57.490 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:58:57.491 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 22:58:57.492 +0900 - info: 결과는?
+2019-01-30 22:58:57.492 +0900 - info: 
+2019-01-30 22:58:57.511 +0900 - info: 제목존재
+2019-01-30 22:59:00.327 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 22:59:00.328 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 22:59:00.328 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 22:59:00.329 +0900 - info: 결과는?
+2019-01-30 22:59:00.329 +0900 - info: 
+2019-01-30 22:59:00.333 +0900 - info: 제목존재
+2019-01-30 23:02:26.248 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:02:26.253 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:02:26.303 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:02:26.304 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:02:26.306 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:02:26.306 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:02:26.312 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:02:35.729 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:02:35.730 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:02:35.731 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:02:35.731 +0900 - info: 결과는?
+2019-01-30 23:02:35.732 +0900 - info: 
+2019-01-30 23:02:35.749 +0900 - info: 제목존재
+2019-01-30 23:02:37.559 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:02:37.559 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:02:37.560 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:02:37.560 +0900 - info: 결과는?
+2019-01-30 23:02:37.560 +0900 - info: 
+2019-01-30 23:02:37.566 +0900 - info: 제목존재
+2019-01-30 23:02:39.269 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:02:39.270 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:02:39.270 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:03:09.186 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:03:09.186 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:03:09.187 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:03:10.721 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:03:10.721 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:03:10.722 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:03:11.675 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:03:11.676 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:03:11.676 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:03:37.290 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:03:37.295 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:03:37.344 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:03:37.345 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:03:37.347 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:03:37.347 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:03:37.354 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:03:38.954 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:03:38.955 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:03:38.956 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:03:46.146 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:03:46.147 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:03:46.147 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:04:20.085 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:04:20.093 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:04:20.128 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:04:20.129 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:04:20.130 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:04:20.130 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:04:20.138 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:04:22.206 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:04:22.207 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:04:22.209 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:04:23.600 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:04:23.601 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:04:23.601 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:04:24.567 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:04:24.568 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:04:24.569 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:04:26.785 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:04:26.785 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:04:26.786 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:04:26.786 +0900 - info: 결과는?
+2019-01-30 23:04:26.786 +0900 - info: 
+2019-01-30 23:04:26.795 +0900 - info: 제목존재
+2019-01-30 23:05:01.470 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:05:01.471 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:05:01.471 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:05:01.472 +0900 - info: 결과는?
+2019-01-30 23:05:01.472 +0900 - info: 
+2019-01-30 23:05:01.482 +0900 - info: 제목존재
+2019-01-30 23:05:05.350 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:05:05.351 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:05:05.351 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:05:08.244 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:05:08.245 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:05:11.481 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:05:11.481 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:05:14.406 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:05:14.406 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:05:19.942 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:05:19.943 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:05:21.685 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:05:21.685 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:05:21.686 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:05:21.686 +0900 - info: 결과는?
+2019-01-30 23:05:21.686 +0900 - info: 
+2019-01-30 23:05:21.690 +0900 - info: 제목존재
+2019-01-30 23:06:25.953 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:06:25.954 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:06:39.800 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:06:39.800 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:06:40.253 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:06:40.253 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:06:43.069 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:06:43.069 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:06:43.070 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:06:43.070 +0900 - info: 결과는?
+2019-01-30 23:06:43.070 +0900 - info: 
+2019-01-30 23:06:43.078 +0900 - info: 제목존재
+2019-01-30 23:06:44.708 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:06:44.708 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:06:46.088 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:06:46.088 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:06:46.089 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:06:46.089 +0900 - info: 결과는?
+2019-01-30 23:06:46.090 +0900 - info: 
+2019-01-30 23:06:46.094 +0900 - info: 제목존재
+2019-01-30 23:07:13.962 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:07:13.963 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:07:25.396 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:07:25.397 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:07:25.398 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:07:25.672 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:07:25.673 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:08:36.067 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:08:36.073 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:08:36.148 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:08:36.149 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:08:36.150 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:08:36.151 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:08:36.159 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:08:37.536 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:08:37.537 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:08:37.539 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:08:37.543 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:08:37.961 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:08:37.962 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:08:37.966 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:08:42.805 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:08:42.806 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:08:42.807 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:08:42.808 +0900 - info: 결과는?
+2019-01-30 23:08:42.808 +0900 - info: 
+2019-01-30 23:08:42.815 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:08:42.817 +0900 - info: 제목존재
+2019-01-30 23:08:54.495 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:08:54.495 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:08:54.498 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:08:56.532 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:08:56.532 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:08:56.534 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:08:56.792 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:08:56.792 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:08:56.794 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:09:47.994 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:09:47.998 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:09:48.031 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:09:48.032 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:09:48.033 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:09:48.033 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:09:48.039 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:09:49.597 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:09:49.597 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:09:49.601 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:09:50.102 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:09:50.103 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:09:50.109 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:09:50.782 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:09:50.782 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:09:50.789 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:16:27.615 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:16:27.620 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:16:27.652 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:16:27.652 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:16:27.654 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:16:27.654 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:16:27.662 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:16:32.192 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:16:32.192 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:16:32.206 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:16:35.521 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:16:35.522 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:16:35.524 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:16:35.525 +0900 - info: 1121212
+2019-01-30 23:16:35.526 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:16:35.818 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:16:35.819 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:16:35.821 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:17:09.387 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:17:09.388 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:17:09.388 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:17:09.389 +0900 - info: 1121212
+2019-01-30 23:17:09.389 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:17:09.859 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:17:09.859 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:17:09.862 +0900 - info: bigtitle 에 제목 할당!
+2019-01-30 23:18:19.811 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:18:19.815 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:18:19.847 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:18:19.848 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:18:19.849 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:18:19.850 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:18:19.856 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:18:21.433 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:18:21.433 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:18:21.435 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:18:21.435 +0900 - info: 
+2019-01-30 23:18:45.938 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:18:45.944 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:18:45.976 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:18:45.977 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:18:45.978 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:18:45.979 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:18:45.986 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:18:47.402 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:18:47.403 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:18:47.405 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:18:47.405 +0900 - info: 
+2019-01-30 23:19:15.496 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:19:15.496 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:19:15.502 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:19:15.503 +0900 - info: 
+2019-01-30 23:19:16.035 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:19:16.035 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:19:53.418 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:19:53.423 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:19:53.471 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:19:53.473 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:19:53.475 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:19:53.475 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:19:53.481 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:19:55.313 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:19:55.314 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:19:55.315 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:22:21.289 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:22:21.293 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:22:21.327 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:22:21.328 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:22:21.332 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:22:21.334 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:22:21.334 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:22:21.341 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:22:21.355 +0900 - info: 제목존재
+2019-01-30 23:22:23.541 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:22:23.541 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:22:23.543 +0900 - info: / 메인화면 진입. - index.js
+2019-01-30 23:22:24.008 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:22:24.009 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:22:25.159 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:22:25.160 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:38:00.294 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:38:00.299 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:38:00.364 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:38:00.365 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:38:00.366 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:38:00.367 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:38:00.373 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:38:08.672 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:38:08.673 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:38:08.673 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:38:08.674 +0900 - info: 결과는?
+2019-01-30 23:38:08.676 +0900 - info: Promise { undefined }
+2019-01-30 23:38:08.695 +0900 - info: 제목존재
+2019-01-30 23:38:09.132 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:38:09.132 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:39:42.217 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:39:42.221 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:39:42.269 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:39:42.270 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:39:42.272 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:39:42.272 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:39:42.278 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:39:46.362 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:39:46.362 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:39:46.363 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:39:46.364 +0900 - info: 결과는?
+2019-01-30 23:39:46.366 +0900 - info: Promise { undefined }
+2019-01-30 23:39:46.381 +0900 - info: 제목존재
+2019-01-30 23:39:46.895 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:39:46.895 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:39:50.502 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:39:50.503 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:39:50.503 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:39:50.505 +0900 - info: 결과는?
+2019-01-30 23:39:50.506 +0900 - info: Promise { undefined }
+2019-01-30 23:39:50.510 +0900 - info: 제목존재
+2019-01-30 23:39:50.766 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:39:50.766 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:52:15.805 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-30 23:52:15.811 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-30 23:52:15.883 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-30 23:52:15.884 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-30 23:52:15.886 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-30 23:52:15.886 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-30 23:52:15.892 +0900 - info: 서버 작동. - index.js
+2019-01-30 23:52:22.829 +0900 - info: 공통페이지 진입 - app.js
+2019-01-30 23:52:22.829 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-30 23:52:22.831 +0900 - info: selectMenuFunc 시작. - write.js
+2019-01-30 23:52:22.833 +0900 - info: 결과는?
+2019-01-30 23:52:22.833 +0900 - info: 
+2019-01-30 23:52:22.857 +0900 - info: 제목존재
+2019-01-31 00:02:44.406 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:02:44.412 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:02:44.502 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:02:44.503 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:02:44.505 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:02:44.505 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:02:44.512 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:02:47.100 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:02:47.100 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:02:47.101 +0900 - info: 결과는?
+2019-01-31 00:02:47.166 +0900 - info: IncomingMessage {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 16384,
+     buffer: BufferList { head: null, tail: null, length: 0 },
+     length: 0,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: true,
+     endEmitted: false,
+     reading: false,
+     sync: true,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: true,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  socket: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Array],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Array],
+        timeout: [Function: socketOnTimeout],
+        data: [Function: bound socketOnData],
+        error: [Array],
+        close: [Array],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     _bytesDispatched: 424,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 2,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '6::::3000',
+        [Symbol(asyncId)]: 14 },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 2,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '6::::3000',
+        [Symbol(asyncId)]: 14 },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        _bytesDispatched: 0,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Circular],
+        _idleStart: 3197,
+        _destroyed: false,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        [Symbol(asyncId)]: 52,
+        [Symbol(bytesRead)]: 0,
+        [Symbol(asyncId)]: 53,
+        [Symbol(triggerAsyncId)]: 14 },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Object],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 3225,
+     _destroyed: false,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: bound onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: bound parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: true,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: true,
+        socket: [Circular],
+        connection: [Circular],
+        _header: 'HTTP/1.1 500 Internal Server Error\r\nX-Powered-By: Express\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 200\r\nETag: W/"c8-yhpmllkXbxyFE7QwYLuvTAOet+o"\r\nDate: Wed, 30 Jan 2019 15:02:47 GMT\r\nConnection: keep-alive\r\n\r\n',
+        _onPendingData: [Function: bound updateOutgoingData],
+        _sent100: false,
+        _expect_continue: false,
+        req: [Circular],
+        locals: [Object],
+        writeHead: [Function: writeHead],
+        end: [Function: end],
+        _startAt: [Array],
+        _startTime: 2019-01-30T15:02:47.111Z,
+        __onFinished: [Object],
+        statusCode: 500,
+        statusMessage: 'Internal Server Error',
+        [Symbol(outHeadersKey)]: [Object] },
+     _peername: { address: '::1', family: 'IPv6', port: 63828 },
+     [Symbol(asyncId)]: 46,
+     [Symbol(bytesRead)]: 0,
+     [Symbol(asyncId)]: 48,
+     [Symbol(triggerAsyncId)]: 14 },
+  connection: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Array],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Array],
+        timeout: [Function: socketOnTimeout],
+        data: [Function: bound socketOnData],
+        error: [Array],
+        close: [Array],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     _bytesDispatched: 424,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 2,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '6::::3000',
+        [Symbol(asyncId)]: 14 },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 2,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '6::::3000',
+        [Symbol(asyncId)]: 14 },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        _bytesDispatched: 0,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Circular],
+        _idleStart: 3197,
+        _destroyed: false,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        [Symbol(asyncId)]: 52,
+        [Symbol(bytesRead)]: 0,
+        [Symbol(asyncId)]: 53,
+        [Symbol(triggerAsyncId)]: 14 },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Object],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 3225,
+     _destroyed: false,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: bound onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: bound parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: true,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: true,
+        socket: [Circular],
+        connection: [Circular],
+        _header: 'HTTP/1.1 500 Internal Server Error\r\nX-Powered-By: Express\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 200\r\nETag: W/"c8-yhpmllkXbxyFE7QwYLuvTAOet+o"\r\nDate: Wed, 30 Jan 2019 15:02:47 GMT\r\nConnection: keep-alive\r\n\r\n',
+        _onPendingData: [Function: bound updateOutgoingData],
+        _sent100: false,
+        _expect_continue: false,
+        req: [Circular],
+        locals: [Object],
+        writeHead: [Function: writeHead],
+        end: [Function: end],
+        _startAt: [Array],
+        _startTime: 2019-01-30T15:02:47.111Z,
+        __onFinished: [Object],
+        statusCode: 500,
+        statusMessage: 'Internal Server Error',
+        [Symbol(outHeadersKey)]: [Object] },
+     _peername: { address: '::1', family: 'IPv6', port: 63828 },
+     [Symbol(asyncId)]: 46,
+     [Symbol(bytesRead)]: 0,
+     [Symbol(asyncId)]: 48,
+     [Symbol(triggerAsyncId)]: 14 },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: true,
+  headers: 
+   { host: 'localhost:3000',
+     connection: 'keep-alive',
+     'cache-control': 'max-age=0',
+     'upgrade-insecure-requests': '1',
+     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+     accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+     referer: 'http://localhost:3000/',
+     'accept-encoding': 'gzip, deflate, br',
+     'accept-language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+     cookie: 'connect.sid=s%3Aer3PkrBC4VTR_WRa5nU4wu0s3pxzGv79.bmBgc%2FAxYiuYB0UDp3aW51ATfPXZKQWbQTnN%2BbJcMsE' },
+  rawHeaders: 
+   [ 'Host',
+     'localhost:3000',
+     'Connection',
+     'keep-alive',
+     'Cache-Control',
+     'max-age=0',
+     'Upgrade-Insecure-Requests',
+     '1',
+     'User-Agent',
+     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+     'Accept',
+     'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+     'Referer',
+     'http://localhost:3000/',
+     'Accept-Encoding',
+     'gzip, deflate, br',
+     'Accept-Language',
+     'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+     'Cookie',
+     'connect.sid=s%3Aer3PkrBC4VTR_WRa5nU4wu0s3pxzGv79.bmBgc%2FAxYiuYB0UDp3aW51ATfPXZKQWbQTnN%2BbJcMsE' ],
+  trailers: {},
+  rawTrailers: [],
+  upgrade: false,
+  url: '/write/bigwrite',
+  method: 'GET',
+  statusCode: null,
+  statusMessage: null,
+  client: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Array],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Array],
+        timeout: [Function: socketOnTimeout],
+        data: [Function: bound socketOnData],
+        error: [Array],
+        close: [Array],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     _bytesDispatched: 424,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 2,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '6::::3000',
+        [Symbol(asyncId)]: 14 },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 2,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '6::::3000',
+        [Symbol(asyncId)]: 14 },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        _bytesDispatched: 0,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Circular],
+        _idleStart: 3197,
+        _destroyed: false,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        [Symbol(asyncId)]: 52,
+        [Symbol(bytesRead)]: 0,
+        [Symbol(asyncId)]: 53,
+        [Symbol(triggerAsyncId)]: 14 },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Object],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 3225,
+     _destroyed: false,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: bound onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: bound parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: true,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: true,
+        socket: [Circular],
+        connection: [Circular],
+        _header: 'HTTP/1.1 500 Internal Server Error\r\nX-Powered-By: Express\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 200\r\nETag: W/"c8-yhpmllkXbxyFE7QwYLuvTAOet+o"\r\nDate: Wed, 30 Jan 2019 15:02:47 GMT\r\nConnection: keep-alive\r\n\r\n',
+        _onPendingData: [Function: bound updateOutgoingData],
+        _sent100: false,
+        _expect_continue: false,
+        req: [Circular],
+        locals: [Object],
+        writeHead: [Function: writeHead],
+        end: [Function: end],
+        _startAt: [Array],
+        _startTime: 2019-01-30T15:02:47.111Z,
+        __onFinished: [Object],
+        statusCode: 500,
+        statusMessage: 'Internal Server Error',
+        [Symbol(outHeadersKey)]: [Object] },
+     _peername: { address: '::1', family: 'IPv6', port: 63828 },
+     [Symbol(asyncId)]: 46,
+     [Symbol(bytesRead)]: 0,
+     [Symbol(asyncId)]: 48,
+     [Symbol(triggerAsyncId)]: 14 },
+  _consuming: false,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '',
+  originalUrl: '/write/bigwrite',
+  _parsedUrl: 
+   Url {
+     protocol: null,
+     slashes: null,
+     auth: null,
+     host: null,
+     port: null,
+     hostname: null,
+     hash: null,
+     search: null,
+     query: null,
+     pathname: '/write/bigwrite',
+     path: '/write/bigwrite',
+     href: '/write/bigwrite',
+     _raw: '/write/bigwrite' },
+  params: {},
+  query: {},
+  res: 
+   ServerResponse {
+     domain: null,
+     _events: { finish: [Array], end: [Function: onevent] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: false,
+     upgrading: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: true,
+     useChunkedEncodingByDefault: true,
+     sendDate: true,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: false,
+     _headerSent: true,
+     socket: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        _bytesDispatched: 424,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 3225,
+        _destroyed: false,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular],
+        _peername: [Object],
+        [Symbol(asyncId)]: 46,
+        [Symbol(bytesRead)]: 0,
+        [Symbol(asyncId)]: 48,
+        [Symbol(triggerAsyncId)]: 14 },
+     connection: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        _bytesDispatched: 424,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 3225,
+        _destroyed: false,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular],
+        _peername: [Object],
+        [Symbol(asyncId)]: 46,
+        [Symbol(bytesRead)]: 0,
+        [Symbol(asyncId)]: 48,
+        [Symbol(triggerAsyncId)]: 14 },
+     _header: 'HTTP/1.1 500 Internal Server Error\r\nX-Powered-By: Express\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 200\r\nETag: W/"c8-yhpmllkXbxyFE7QwYLuvTAOet+o"\r\nDate: Wed, 30 Jan 2019 15:02:47 GMT\r\nConnection: keep-alive\r\n\r\n',
+     _onPendingData: [Function: bound updateOutgoingData],
+     _sent100: false,
+     _expect_continue: false,
+     req: [Circular],
+     locals: 
+      { message: 'menuQueryResult is not defined',
+        error: ReferenceError: menuQueryResult is not defined
+    at /Users/macbookpro/Desktop/myblog/routes/write/write.js:58:3
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:47:12) },
+     writeHead: [Function: writeHead],
+     end: [Function: end],
+     _startAt: [ 174548, 526419165 ],
+     _startTime: 2019-01-30T15:02:47.111Z,
+     __onFinished: { [Function: listener] queue: [Array] },
+     statusCode: 500,
+     statusMessage: 'Internal Server Error',
+     [Symbol(outHeadersKey)]: 
+      { 'x-powered-by': [Array],
+        'content-type': [Array],
+        'content-length': [Array],
+        etag: [Array] } },
+  _parsedOriginalUrl: 
+   Url {
+     protocol: null,
+     slashes: null,
+     auth: null,
+     host: null,
+     port: null,
+     hostname: null,
+     hash: null,
+     search: null,
+     query: null,
+     pathname: '/write/bigwrite',
+     path: '/write/bigwrite',
+     href: '/write/bigwrite',
+     _raw: '/write/bigwrite' },
+  sessionStore: 
+   MySQLStore {
+     connection: 
+      Pool {
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        config: [Object],
+        _acquiringConnections: [],
+        _allConnections: [Array],
+        _freeConnections: [],
+        _connectionQueue: [],
+        _closed: false },
+     options: 
+      { host: 'localhost',
+        port: 3306,
+        user: 'root',
+        password: '1111',
+        database: 'mydb2',
+        endConnectionOnClose: true,
+        clearExpired: true,
+        checkExpirationInterval: 900000,
+        expiration: 86400000,
+        createDatabaseTable: true,
+        connectionLimit: 1,
+        charset: 'utf8mb4_bin',
+        schema: [Object] },
+     generate: [Function],
+     _events: 
+      { disconnect: [Function: ondisconnect],
+        connect: [Function: onconnect] },
+     _eventsCount: 2,
+     _expirationInterval: 
+      Timeout {
+        _called: false,
+        _idleTimeout: 900000,
+        _idlePrev: [Object],
+        _idleNext: [Object],
+        _idleStart: 640,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: 900000,
+        _destroyed: false,
+        [Symbol(asyncId)]: 43,
+        [Symbol(triggerAsyncId)]: 31 } },
+  sessionID: 'er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79',
+  session: 
+   Session {
+     cookie: 
+      { path: '/',
+        _expires: 2019-05-10T15:02:47.109Z,
+        originalMaxAge: 8640000000,
+        httpOnly: true } },
+  _startAt: [ 174548, 512886627 ],
+  _startTime: 2019-01-30T15:02:47.097Z,
+  _remoteAddress: '::1',
+  body: {},
+  secret: undefined,
+  cookies: 
+   { 'connect.sid': 's:er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79.bmBgc/AxYiuYB0UDp3aW51ATfPXZKQWbQTnN+bJcMsE' },
+  signedCookies: {},
+  route: 
+   Route {
+     path: '/write/bigwrite',
+     stack: [ [Object] ],
+     methods: { get: true } } } bignum=1, title=Node.js 로그인 기능, description=<p>#node js 어렵지 않아요! 쉬워요~!</p><p> #학습대상 : 누구나<br> #학습목표 : node js 로그인 기능을 만들어요<br> #레벨: 초중<br><br></p>, close=false, pay=false, mainclose=false, regdate=2019-01-30 22:34:34, section=영상, lang=Node.js, price=0, fileurl=#, image=./bigwriteimages/2019130223434.png
+2019-01-31 00:05:14.046 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:05:14.051 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:05:14.083 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:05:14.084 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:05:14.085 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:05:14.085 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:05:14.092 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:05:16.055 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:05:16.056 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:05:16.057 +0900 - info: 결과는?
+2019-01-31 00:05:16.545 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:05:16.546 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:06:46.979 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:06:46.983 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:06:47.015 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:06:47.016 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:06:47.018 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:06:47.018 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:06:47.024 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:06:48.946 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:06:48.947 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:06:49.467 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:06:49.467 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:06:57.217 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:06:57.222 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:06:57.256 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:06:57.257 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:06:57.259 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:06:57.259 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:06:57.270 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:06:58.970 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:06:58.971 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:06:59.299 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:06:59.300 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:09:02.472 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:09:02.478 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:09:02.545 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:09:02.546 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:09:02.548 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:09:02.548 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:09:02.555 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:09:07.834 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:09:07.835 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:09:08.330 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:09:08.331 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:27.817 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:10:27.822 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:10:27.883 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:10:27.885 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:10:27.886 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:10:27.886 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:10:27.892 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:10:29.411 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:29.412 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:29.975 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:29.975 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:31.189 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:31.190 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:31.404 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:31.405 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:31.438 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:31.438 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:31.464 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:31.464 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:31.504 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:31.505 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:32.353 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:32.353 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:32.353 +0900 - info: 
+2019-01-31 00:10:32.355 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:10:32.356 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:37:16)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:10:33.194 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:33.194 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:33.461 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:33.462 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:34.074 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:34.074 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:34.329 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:34.330 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:34.701 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:34.701 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:10:34.944 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:10:34.944 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:38.384 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:12:38.388 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:12:38.424 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:12:38.425 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:12:38.426 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:12:38.426 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:12:38.433 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:12:40.711 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:40.712 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:41.246 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:41.247 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:42.360 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:42.360 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:42.673 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:42.674 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:44.177 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:44.178 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:44.473 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:44.473 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:44.863 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:44.864 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:45.143 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:45.143 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:45.583 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:45.583 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:45.861 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:45.861 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:45.866 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:45.867 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:45.919 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:45.920 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:45.956 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:45.956 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:46.360 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:12:46.360 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:12:46.363 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:12:46.364 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:41:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:14:46.370 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:14:46.371 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:14:46.374 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:14:46.374 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:41:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:15:17.921 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:15:17.925 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:15:17.959 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:15:17.960 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:15:17.961 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:15:17.961 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:15:17.967 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:15:19.971 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:15:19.972 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:15:19.981 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:15:19.982 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:39:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:17:19.969 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:17:19.969 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:17:19.971 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:17:19.972 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:39:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:17:32.396 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:17:32.403 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:17:32.440 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:17:32.441 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:17:32.443 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:17:32.443 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:17:32.449 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:17:35.202 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:17:35.203 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:17:35.211 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:17:35.212 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:39:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:19:18.307 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:19:18.312 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:19:18.343 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:19:18.344 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:19:18.345 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:19:18.346 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:19:18.354 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:19:20.087 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:19:20.088 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:19:20.097 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:19:20.098 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:38:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:21:16.093 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:21:16.098 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:21:16.130 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:21:16.131 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:21:16.132 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:21:16.133 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:21:16.138 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:21:18.865 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:21:18.866 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:21:18.875 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:21:18.876 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:28:10
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:275:10), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:21:20.435 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:21:20.436 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:21:20.438 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:21:20.439 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:28:10
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:275:10), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:21:21.240 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:21:21.240 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:21:21.241 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:21:21.242 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:28:10
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:275:10), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:21:22.105 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:21:22.106 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:21:22.107 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:21:22.107 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:28:10
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:275:10), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:22:33.874 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:22:33.879 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:22:33.910 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:22:33.911 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:22:33.912 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:22:33.912 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:22:33.919 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:22:38.611 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:38.611 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:38.612 +0900 - info: 
+2019-01-31 00:22:39.525 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:39.526 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:39.527 +0900 - info: / 메인화면 진입. - index.js
+2019-01-31 00:22:39.821 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:39.822 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:41.463 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:41.463 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:41.463 +0900 - info: 1
+2019-01-31 00:22:41.712 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:41.712 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:41.735 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:41.735 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:41.804 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:41.804 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:41.850 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:41.850 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:45.666 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:45.667 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:45.667 +0900 - info: 
+2019-01-31 00:22:49.295 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:49.295 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:55.624 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:55.624 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:55.625 +0900 - info: 1
+2019-01-31 00:22:55.878 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:55.878 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:55.883 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:55.883 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:55.925 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:55.926 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:22:55.971 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:22:55.971 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:36.475 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:36.475 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:36.476 +0900 - info: 1
+2019-01-31 00:23:36.950 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:36.952 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:36.993 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:36.993 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:37.054 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:37.054 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:37.116 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:37.116 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:37.924 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:37.924 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:37.925 +0900 - info: 1
+2019-01-31 00:23:38.222 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:38.223 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:38.245 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:38.246 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:38.281 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:38.282 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:38.295 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:38.296 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:38.859 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:38.860 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:38.860 +0900 - info: 1
+2019-01-31 00:23:39.137 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:39.137 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:39.155 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:39.155 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:39.205 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:39.206 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:39.239 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:39.240 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:40.081 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:40.081 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:40.082 +0900 - info: 1
+2019-01-31 00:23:40.405 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:40.405 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:40.411 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:40.411 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:40.492 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:40.492 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:40.544 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:40.544 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:41.675 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:41.676 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:41.676 +0900 - info: 1
+2019-01-31 00:23:41.972 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:41.972 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:41.978 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:41.978 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:42.033 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:42.034 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:23:42.080 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:23:42.081 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:34:39.262 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:34:39.263 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:34:39.725 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:34:39.726 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:34:40.855 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:34:40.856 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:34:41.111 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:34:41.111 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:34:44.753 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:34:44.754 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:34:45.193 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:34:45.195 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:41:58.960 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:41:58.965 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:41:59.039 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:41:59.040 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:41:59.042 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:41:59.042 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:41:59.043 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:41:59.043 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:41:59.049 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:42:03.830 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:42:03.831 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:42:08.300 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:42:08.301 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:42:08.301 +0900 - info: / 메인화면 진입. - index.js
+2019-01-31 00:42:12.714 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:42:12.715 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:43:25.762 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:43:25.763 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:43:50.703 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:43:50.703 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:43:52.071 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:43:52.071 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:44:54.026 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:44:54.027 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:45:14.535 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:45:14.536 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:45:27.492 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:45:27.492 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:46:37.371 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:46:37.371 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:46:38.723 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:46:38.724 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:46:40.048 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:46:40.048 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:49:11.396 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:49:11.396 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:51:43.419 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:51:43.420 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:51:46.042 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:51:46.042 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:52:00.794 +0900 - info: 메모리 로딩 시작. - index.js
+2019-01-31 00:52:00.801 +0900 - info: 메모리 로딩 완료. - index.js
+2019-01-31 00:52:00.868 +0900 - info: 메모리 로딩 시작. - write.js
+2019-01-31 00:52:00.869 +0900 - info: 메모리 로딩 완료. - write.js
+2019-01-31 00:52:00.871 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:52:00.871 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:52:00.873 +0900 - info: 메모리 로딩 시작. - read.js
+2019-01-31 00:52:00.873 +0900 - info: 메모리 로딩 완료. - read.js
+2019-01-31 00:52:00.878 +0900 - info: 서버 작동. - index.js
+2019-01-31 00:52:04.221 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:52:04.222 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:52:24.593 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:52:24.594 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:52:25.879 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:52:25.879 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:53:42.565 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:53:42.565 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:55:01.782 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:55:01.782 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:55:26.028 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:55:26.028 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:55:41.933 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:55:41.933 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:57:03.654 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:57:03.654 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:57:05.024 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:57:05.025 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:58:48.620 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:58:48.621 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:59:20.964 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:59:20.964 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:59:33.757 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:59:33.759 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 00:59:54.833 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 00:59:54.833 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:01:00.505 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:01:00.505 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:01:36.564 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:01:36.565 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:01:44.064 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:01:44.064 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:01:52.519 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:01:52.519 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:18.010 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:18.011 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:19.053 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:19.054 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:20.771 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:20.771 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:29.310 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:29.310 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:41.051 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:41.051 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:41.986 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:41.986 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:42.959 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:42.960 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:42.960 +0900 - info: 
+2019-01-31 01:02:48.810 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:48.811 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:48.928 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:48.928 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:48.958 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:48.958 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:48.993 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:48.993 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:52.870 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:52.871 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:52.871 +0900 - info: 1
+2019-01-31 01:02:52.991 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:52.991 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:53.022 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:53.023 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:02:53.052 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:02:53.053 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:03:52.421 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:03:52.421 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:03:53.665 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:03:53.665 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:04:32.435 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:04:32.435 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:04:53.346 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:04:53.347 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:05:02.475 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:05:02.475 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:05:19.153 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:05:19.154 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:05:34.233 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:05:34.234 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:05:57.498 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:05:57.499 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:05:59.376 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:05:59.376 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:06:18.186 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:06:18.186 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:06:22.269 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:06:22.269 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:06:23.349 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:06:23.349 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:06:23.946 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:06:23.947 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:06:37.070 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:06:37.071 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:06:38.096 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:06:38.097 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:06:47.204 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:06:47.205 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:07:08.543 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:07:08.543 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:07:11.087 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:07:11.087 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:07:12.302 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:07:12.303 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:07:13.109 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:07:13.110 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:07:15.754 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:07:15.755 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:07:31.121 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:07:31.122 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:07:36.004 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:07:36.004 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:07:37.308 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:07:37.308 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:07:53.809 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:07:53.810 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:07:57.726 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:07:57.726 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:08:20.693 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:08:20.694 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:08:20.694 +0900 - info: 1
+2019-01-31 01:08:21.021 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:08:21.021 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:08:21.074 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:08:21.074 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79
+2019-01-31 01:08:21.137 +0900 - info: 공통페이지 진입 - app.js
+2019-01-31 01:08:21.137 +0900 - info: 세션 아이디 : er3PkrBC4VTR_WRa5nU4wu0s3pxzGv79

@@ -21,3 +21,256 @@
     at Query.EofPacket (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
     at Protocol._parsePacket (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
     at Parser.write (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:10:32.355 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:10:32.356 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:37:16)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:12:46.363 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:12:46.364 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:41:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:14:46.374 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:14:46.374 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:41:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:15:19.982 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:15:19.983 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:39:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:17:19.971 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:17:19.972 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:39:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:17:35.211 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:17:35.212 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:39:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:19:20.097 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:19:20.098 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:38:16
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/routes/read/read.js:16:9)
+    at Query.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:21:18.875 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:21:18.877 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:28:10
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:275:10), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:21:20.438 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:21:20.439 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:28:10
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:275:10), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:21:21.242 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:21:21.242 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:28:10
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:275:10), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?
+2019-01-31 00:21:22.107 +0900 - error: 대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js
+2019-01-31 00:21:22.108 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/read/read.js:28:10
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:275:10), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1, sqlState=42000, index=0, sql=select * from bigTbl where bignum = ?

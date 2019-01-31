@@ -1,0 +1,78 @@
+
+    <% include ../head %>
+
+    <% include ../header %>
+
+    <div class="col-md-9">
+        <div class="row"> 
+
+                <div class="col-md-2"></div>
+
+
+                <div class="col-md-8">
+                    <h2 class="page-header">가입</h2>
+                      <form class="form-signin">
+                    
+                          <div class="text-center mb-4">
+                      
+                            <div class="alert alert-light alert-dismissible fade show" role="alert">
+                              <span id="alerttext"></span>
+                              <button type="button" class="close" data-dismiss="alert2" id="alertclose" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                          </div>
+                      
+                          <div class="text-center mb-4">
+                          </div>
+                      
+
+                          <div class="form-label-group">
+                            <input type="text" id="inputNickName" class="form-control" name="nickname" placeholder="닉네임" required
+                              autofocus>
+                          </div><br>
+                      
+                      
+                          <div class="form-label-group">
+                            <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email" required autofocus>
+                          </div><br>
+                      
+                      
+                          <div class="form-label-group">
+                            <input type="password" id="inputPassword" class="form-control" name="pwd" placeholder="비밀번호" required>
+                          </div><br>
+                      
+                      
+                          <div class="form-label-group">
+                            <input type="password" id="inputPasswordCheck" class="form-control" name="pwdcheck" placeholder="비밀번호확인" required>
+                          </div><br>
+
+                          <input type="button" class="btn btn-lg btn-default btn-block" id="submitbtn" value="가입하기">
+                          <br>
+                      
+                  </div>
+                      </div>
+              
+
+                    </form>
+              </div>
+
+
+
+                <div class="col-md-2"></div>
+
+        </div>
+    </div>
+
+
+    <% include ../footer %>
+ 
+    <script>
+        $(document).ready(function () {
+         
+        });
+</script>
+                 
+  </body>
+
+</html>

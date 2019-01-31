@@ -7,20 +7,6 @@ var selectMenuQuery = require('../selectmenuquery.js');     //메뉴명 가져�
 loger.info("메모리 로딩 시작. - write.js");
 
 
-/* 메뉴명 가져오는 쿼리  */
-// function selectMenuQuery( callback ) {
-//   var sql = 'select * from bigTbl';
-//   client.query(sql, function(err, rows, results) {
-//       if (err) {
-//            callback(err);
-//            return;
-//       }else{
-//         callback(null, rows); 
-//       }
-//   });
-// };
-
-
 /* 대분류 작성*/
 router.get('/write/bigwrite', function (req, res, next) {
   //대분류 메뉴명 가져옴

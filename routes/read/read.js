@@ -6,7 +6,6 @@ var selectMenuQuery = require('../selectmenuquery.js');      //메뉴명 가져�
 loger.info("메모리 로딩 시작. - read.js");
 
 
-
 /* 중분류 보기 */
 router.get('/read/readbigmiddle', function (req, res, next) {
 

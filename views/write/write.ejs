@@ -10,7 +10,7 @@
             
                 <div class="row"> 
                     <div class="col-md-2">
-                            <select title=“대분류” class="form-control" id="bigtitle">
+                            <select title=“대분류” class="form-control" id="bigtitle" onchange="bigtitleSelect()">
                                     <option>대분류</option>
                                     <%if (rows != undefined) { %>
                                         <% for (var i = 0; i < rows.length; i++) {  %>
@@ -23,12 +23,8 @@
                     </div><!-- /col-md-2 -->
 
                     <div class="col-md-2">
-                            <select class="form-control" id="category">
-                                    <option>중분류</option>
-                                    <option>ios</option>
-                                    <option>nodejs</option>
-                                    <option>objective c</option>
-                                    <option>js</option>
+                            <select class="form-control" id="middletitle">
+                                <option>중분류</option>
                             </select>
                     </div><!-- /col-md-2 -->
 
@@ -75,9 +71,54 @@
     <% include ../footer %>
  
     <script>
-        function showContent() {
-            $('.output').html($('#summernote').summernote('code'));
-        }
+
+
+
+    function bigtitleSelect() {
+
+        var bigtitleSelect = document.getElementById("bigtitle");
+        var bigtitlevalue = bigtitleSelect.options[bigtitleSelect.selectedIndex].value;
+
+
+        //대분류 클릭하면 해당 중분류 뿌려주기
+        $.ajax({
+            url: '/write/getMiddleTitle',
+            dataType: 'json',
+            type: 'post',
+            data: {
+                bignum: bigtitlevalue
+            },
+            success: function (data) {
+                if (data['result'] == 'success') {
+
+                    //1.대분류 선택할 때마다 엘리먼트 지워주기
+                    var myNode = document.getElementById("middletitle");
+                    while (myNode.firstChild) {
+                        myNode.removeChild(myNode.firstChild);
+                    }
+
+                    //2.엘리먼트 동적 추가
+                    var html = '<option>중분류</option>';
+                    for (var i = 0; i < data['data'].length; i++) {
+                        var middletitle = data['data'][i]['title'];
+                        html += '<option value= ' + i + '>' + middletitle  + '</option>';
+                    }
+
+                    //3.붙이기
+                    $("#middletitle").append(html);
+
+
+                } else if (data['result'] == 'fail') {
+                    alert(data['tocken']);
+                    return;
+                }
+            },
+            error: function (jqXHR, textStatus, err) {
+                //show error message
+                alert('죄송합니다. 작업중 오류가 발생했습니다.' + "상태 : " + textStatus + ', error : ' + err);
+            }
+        });
+    }
     </script>
                  
   </body>

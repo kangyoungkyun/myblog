@@ -168,6 +168,36 @@ router.post('/write/middlewritesave',function (req, res, next) {
   });
 });
 
+
+
+/* post 쓰기에서 대분류 셀렉트 박스 클릭했을때 중분류 제목 조회*/
+router.post('/write/getMiddleTitle', function (req, res, next) {
+
+
+  var bignum = req.body.bignum;  
+
+  var sql = 'select * from middleTbl where bignum = ?';
+  client.query(sql,bignum, function(err, rows, results) {
+      if (err) {
+        loger.error('중분류 제목 조회 쿼리에 오류가 있습니다. - /write/getMiddleTitle - write.js');
+        loger.error(err);
+        return;
+      }else{
+        
+        if(rows.length > 0){
+          res.send({ result: 'success' , tocken:'조회 성공' , data:rows});
+        }else{
+          res.send({ result: 'fail' , tocken:'조회 실패', data: '작성된 중분류가 없습니다.'});
+        }
+        
+      }
+  });
+});
+
+
+
+
+
 module.exports = router;
 loger.info("메모리 로딩 완료. - write.js");
 

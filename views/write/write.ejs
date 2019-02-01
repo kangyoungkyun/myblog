@@ -61,7 +61,7 @@
             <br>
             <div class="row">
                 <div class="text-center">
-                    <button type="button" class="btn btn-success btn-md text-center" onclick="showContent();" id="saveBtn">작성</button>
+                    <button type="button" class="btn btn-success btn-md text-center" id="saveBtn">작성</button>
                     
                 </div>
             </div>
@@ -117,7 +117,7 @@
                     var html = '<option>중분류</option>';
                     for (var i = 0; i < data['data'].length; i++) {
                         var middletitle = data['data'][i]['title'];
-                        html += '<option value= ' + i + '>' + middletitle  + '</option>';
+                        html += '<option value= ' + (i+1) + '>' + middletitle  + '</option>';
                     }
 
                     //3.붙이기
@@ -147,15 +147,14 @@
             var cansee = $("#cansee").is(":checked");                               //미리보기
             var close = $("#close").is(":checked");                                 //비공개
             
-            var bigSelect = document.getElementById("bigtitle");                    //대분류 pk
-            var bignum = bigSelect.options[bigSelect.selectedIndex].value;
-            var bigtext = bigSelect.options[bigSelect.selectedIndex].text;
+            // var bigSelect = document.getElementById("bigtitle");                    //대분류 pk
+            // var bignum = bigSelect.options[bigSelect.selectedIndex].value;
+            // var bigtext = bigSelect.options[bigSelect.selectedIndex].text;
         
             var middleSelect = document.getElementById("middletitle");              //중분류 pk
             var middlenum = middleSelect.options[middleSelect.selectedIndex].value;
             var middletext = middleSelect.options[middleSelect.selectedIndex].text;
             var summernoteContent = $('#summernote').summernote('code');        //썸머노트(중분류설명)
-
 
 
             $.ajax({
@@ -168,7 +167,6 @@
                     posttitle: posttitle,
                     cansee: cansee,
                     close: close,
-                    bignum : bignum,
                     middlenum:middlenum,
                     summernoteContent:summernoteContent
                 },

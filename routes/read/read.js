@@ -12,6 +12,7 @@ router.get('/read/readbigmiddle', function (req, res, next) {
   var bignum = req.query.num;       //대분류 pk 값
 
   loger.info(bignum);
+
   var sql2 = 'select * from bigTbl where bignum = ?';
   client.query(sql2, [bignum], function (err2, onerow, results) {
     if (err2) {
@@ -29,7 +30,7 @@ router.get('/read/readbigmiddle', function (req, res, next) {
               onerow: onerow
             });
           } else {
-
+            //중분류 글 조회
             var sql3 = 'select * from middleTbl where bignum = ?';
             client.query(sql3, [bignum], function (err3, middlerows, results) {
               if (err3) {
@@ -38,16 +39,44 @@ router.get('/read/readbigmiddle', function (req, res, next) {
               } else { 
                 //중분류 글 존재.
                 if(middlerows.length > 0){
-                  res.render('read/readbigmiddle', {
-                    rows: menuResult,
-                    onerow: onerow,
-                    middlerows:middlerows
+                  
+                  //소분류 글 조회
+                  var sql4 = 'select * from postTbl where middlenum in ' +
+                            '(select m.middlenum from bigTbl b, middleTbl m where b.bignum = m.bignum ' +
+                            'and b.bignum = ?)';
+                  client.query(sql4, [bignum], function (err4, postrows, results) {
+                    if (err4) {
+                      loger.error('소분류 글 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js');
+                      loger.error(err4);
+                    } else {
+                      
+                      //소분류 글 존재할때
+                      if (postrows.length > 0) {
+                        res.render('read/readbigmiddle', {
+                          rows: menuResult,
+                          onerow: onerow,
+                          middlerows: middlerows,
+                          postrows: postrows
+                        });
+
+                        //소분류 글 존재 (x)   
+                      } else {
+                        res.render('read/readbigmiddle', {
+                          rows: menuResult,
+                          onerow: onerow,
+                          middlerows: middlerows,
+                          postrows: undefined
+                        });
+                      }
+                    }
                   });
-                }else{
+
+                } else {
                   res.render('read/readbigmiddle', {
                     rows: menuResult,
                     onerow: onerow,
-                    middlerows:undefined
+                    middlerows: undefined,
+                    postrows: undefined
                   });
                 }
               }

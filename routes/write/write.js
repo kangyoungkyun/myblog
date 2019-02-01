@@ -170,9 +170,38 @@ router.post('/write/middlewritesave',function (req, res, next) {
 
 
 
+/* 소분류 저장 액션 */
+router.post('/write/postsave',function (req, res, next) {
+  loger.info('소분류 저장 진입  - /write/postsave - write.js');
+
+  var videourl = req.body.videourl;                               
+  var videotime = req.body.videotime;                             
+  var posttitle = req.body.posttitle;                            
+  var cansee = req.body.cansee;                               
+  var close = req.body.close;                    
+  var bignum = req.body.bignum;                                 
+  var middlenum = req.body.middlenum;         
+  var summernoteContent = req.body.summernoteContent;         
+
+  var insertsql = 'insert into postTbl (bignum,middlenum, title,description,close,cansee,videourl,videotime,author) values (?,?,?,?,?,?,?,?,?)';
+  var params = [bignum,middlenum,posttitle,summernoteContent,close,cansee,videourl,videotime,'큔'];
+  client.query(insertsql, params, function (err, rows, fields) {
+    if (err) {
+      loger.error('post insert 쿼리에 오류가 있습니다. - /write/postsave - write.js');
+      loger.error(err);
+    } else {
+      if(rows.insertId){
+        res.send({ result: 'success' , tocken:'저장성공'});
+      }else{
+        res.send({ result: 'fail' , tocken:'저장실패'});
+      }
+    }
+  });
+});
+
+
 /* post 쓰기에서 대분류 셀렉트 박스 클릭했을때 중분류 제목 조회*/
 router.post('/write/getMiddleTitle', function (req, res, next) {
-
 
   var bignum = req.body.bignum;  
 

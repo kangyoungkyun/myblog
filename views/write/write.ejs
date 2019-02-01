@@ -43,11 +43,11 @@
                     </div><!-- /col-md-2 -->
 
                     <div class="col-md-6">
-                        <input type="text" id = "title" class="form-control" aria-label="제목" placeholder="제목">
+                        <input type="text" id = "posttitle" class="form-control" aria-label="제목" placeholder="제목">
                     </div>
 
                     <div class="col-md-2">
-                        <label class="checkbox-inline"><input type="checkbox" value="">비공개</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="" id="close">비공개</label>
                     </div><!-- /col-md-2 -->
 
                 </div><!-- row -->
@@ -61,14 +61,11 @@
             <br>
             <div class="row">
                 <div class="text-center">
-                    <button type="button" class="btn btn-success btn-md text-center" onclick="showContent();">작성</button>
+                    <button type="button" class="btn btn-success btn-md text-center" onclick="showContent();" id="saveBtn">작성</button>
                     
                 </div>
             </div>
  
-            <div class="output"></div>
-
-
             <script>
             $('#summernote').summernote({
                 height: 400,                 // set editor height
@@ -85,7 +82,12 @@
     <% include ../footer %>
  
     <script>
-
+  $(document).ready(function () {
+      //저장
+      $(document).on('click', '#saveBtn', function () {
+        saveContent();
+      });
+    });
 
 
     function bigtitleSelect() {
@@ -133,6 +135,60 @@
             }
         });
     }
+
+
+        //저장
+        function saveContent() {
+
+            var videourl = $("#videourl").val();                                    //비디오 url
+            var videotime = $("#videotime").val();                                  //비디오 시간
+            var posttitle = $("#posttitle").val();                                  //포스트 제목
+            
+            var cansee = $("#cansee").is(":checked");                               //미리보기
+            var close = $("#close").is(":checked");                                 //비공개
+            
+            var bigSelect = document.getElementById("bigtitle");                    //대분류 pk
+            var bignum = bigSelect.options[bigSelect.selectedIndex].value;
+            var bigtext = bigSelect.options[bigSelect.selectedIndex].text;
+        
+            var middleSelect = document.getElementById("middletitle");              //중분류 pk
+            var middlenum = middleSelect.options[middleSelect.selectedIndex].value;
+            var middletext = middleSelect.options[middleSelect.selectedIndex].text;
+            var summernoteContent = $('#summernote').summernote('code');        //썸머노트(중분류설명)
+
+
+
+            $.ajax({
+                url: '/write/postsave',
+                dataType: 'json',
+                type: 'post',
+                data: {
+                    videourl: videourl,
+                    videotime: videotime,
+                    posttitle: posttitle,
+                    cansee: cansee,
+                    close: close,
+                    bignum : bignum,
+                    middlenum:middlenum,
+                    summernoteContent:summernoteContent
+                },
+                success: function (data) {
+
+                    if (data['result'] == 'success') {
+                        alert(data['tocken']);
+                        location.reload();
+                    } else if (data['result'] == 'fail') {
+                        alert(data['tocken']);
+                        return;
+                    }
+                },
+                error: function (jqXHR, textStatus, err) {
+                    //show error message
+                    alert('죄송합니다. 작업중 오류가 발생했습니다.' + "상태 : " + textStatus + ', error : ' + err);
+                }
+            });
+
+        }
     </script>
                  
   </body>

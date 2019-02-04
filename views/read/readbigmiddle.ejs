@@ -67,7 +67,7 @@
                                             <%if (postrows[ii]['middlenum'] == middlerows[i]['middlenum']) { %>
                                                 <tr>
                                                         <!-- <td><%=postrows[ii]['postnum']%></td> -->
-                                                        <td><a href="/read/readpost?postnum=<%=postrows[ii]['postnum']%>&bignum=middlerows[i]['bignum']"><%=postrows[ii]['title']%></a></td>
+                                                        <td><a href="/read/readpost?postnum=<%=postrows[ii]['postnum']%>&bignum=<%=middlerows[i]['bignum']%>"><%=postrows[ii]['title']%></a></td>
                                                         <td><%=postrows[ii]['videotime']%></td>
                                                 </tr>
                                             <%}%>

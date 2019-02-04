@@ -1,0 +1,46 @@
+2019-02-01 14:27:47.135 +0900 - error: post insert 쿼리에 오류가 있습니다. - /write/postsave - write.js
+2019-02-01 14:27:47.135 +0900 - error:  message=ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?)' at line 1, stack=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?)' at line 1
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/write/write.js:187:10
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:275:10), code=ER_PARSE_ERROR, errno=1064, sqlMessage=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?)' at line 1, sqlState=42000, index=0, sql=insert into postTbl (middlenum, title,description,close,cansee,videourl,videotime,author,count) values ('0','소분류 제목!!!!','<p>소분류 설명!<br></p>','false','false','adfasfafafq34324523','10:00','큔','0',?)
+2019-02-01 14:29:21.014 +0900 - error: post insert 쿼리에 오류가 있습니다. - /write/postsave - write.js
+2019-02-01 14:29:21.015 +0900 - error:  message=ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`mydb2`.`posttbl`, CONSTRAINT `fk_postTbl_middleTbl1` FOREIGN KEY (`middlenum`) REFERENCES `middleTbl` (`middlenum`) ON DELETE NO ACTION ON UPDATE NO ACTION), stack=Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`mydb2`.`posttbl`, CONSTRAINT `fk_postTbl_middleTbl1` FOREIGN KEY (`middlenum`) REFERENCES `middleTbl` (`middlenum`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+    at Query.Sequence._packetToError (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/macbookpro/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at /Users/macbookpro/Desktop/myblog/routes/write/write.js:187:10
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/macbookpro/Desktop/myblog/node_modules/express/lib/router/index.js:275:10), code=ER_NO_REFERENCED_ROW_2, errno=1452, sqlMessage=Cannot add or update a child row: a foreign key constraint fails (`mydb2`.`posttbl`, CONSTRAINT `fk_postTbl_middleTbl1` FOREIGN KEY (`middlenum`) REFERENCES `middleTbl` (`middlenum`) ON DELETE NO ACTION ON UPDATE NO ACTION), sqlState=23000, index=0, sql=insert into postTbl (middlenum, title,description,close,cansee,videourl,videotime,author,count) values ('0','처음발걸음!!','<p>처음발걸음!! - 설명~!<br></p>','false','false','비디오 유알렐','10:10','큔','0')

@@ -49,7 +49,7 @@ router.get('/read/readbigmiddle', function (req, res, next) {
                       loger.error('소분류 글 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js');
                       loger.error(err4);
                     } else {
-                      
+
                       //소분류 글 존재할때
                       if (postrows.length > 0) {
                         res.render('read/readbigmiddle', {
@@ -91,24 +91,74 @@ router.get('/read/readbigmiddle', function (req, res, next) {
 
 /* 포스트 보기 */
 router.get('/read/readpost', function (req, res, next) {
+
+  var postnum = req.query.postnum;       //post pk 값
+  var bignum = req.query.bignum;       //post pk 값
   //대분류 메뉴명 가져옴
-  selectMenuQuery(function(err, menuResult) {
-    if(err){
+  selectMenuQuery(function (err, menuResult) {
+    if (err) {
       loger.info(err);
-    }else{
-      if(menuResult.length == 0){
-        res.render('read/readpost',{
-          rows:undefined
+    } else {
+      if (menuResult.length == 0) {
+        res.render('read/readpost', {
+          rows: undefined
         });
-      }else{
-        res.render('read/readpost',{
-          rows:menuResult
+      } else {
+
+        //소분류 글 조회
+        var sql = 'select * from postTbl where postnum = ?';
+        client.query(sql, [postnum], function (err, postonerow, results) {
+          if (err) {
+            loger.error('소분류 글 조회 문장에 오류가 있습니다. - /read/readpost - /read.js');
+            loger.error(err);
+          } else {
+
+            //포스트 글 존재.
+            if (postonerow.length > 0) {
+
+              //중분류 + 소분류 글 전체 조회
+              var sql4 =  'select * from postTbl p, middleTbl m where p.middlenum = m.middlenum ' +
+                          'and m.middlenum in ' +
+                          '(select m.middlenum from bigTbl b, middleTbl m ' +
+                          'where b.bignum = m.bignum and b.bignum = ?)';
+
+              client.query(sql4, [bignum], function (err4, postrows, results) {
+                if (err4) {
+                  loger.error('소분류 글 조회 문장에 오류가 있습니다. - /read/readbigmiddle - /read.js');
+                  loger.error(err4);
+                } else {
+
+                  //소분류 글 존재할때
+                  if (postrows.length > 0) {
+                    res.render('read/readpost', {
+                      rows: menuResult,
+                      postonerow: postonerow,
+                      postrows:postrows
+                    });
+
+                    //소분류 글 존재 (x)   
+                  } else {
+                    res.render('read/readpost', {
+                      rows: menuResult,
+                      postonerow: undefined,
+                      postrows:undefined
+                    });
+                  }
+                }
+              });
+
+            } else {
+              res.render('read/readpost', {
+                rows: menuResult,
+                postonerow: undefined
+              });
+            }
+          }
         });
       }
     }
   });
 });
-
 
 
 module.exports = router;

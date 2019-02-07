@@ -178,13 +178,12 @@ router.post('/write/postsave',function (req, res, next) {
   var videotime = req.body.videotime;                             
   var posttitle = req.body.posttitle;                            
   var cansee = req.body.cansee;                               
-  var close = req.body.close;                    
-  var bignum = req.body.bignum;                                 
+  var close = req.body.close;                                                  
   var middlenum = req.body.middlenum;         
   var summernoteContent = req.body.summernoteContent;         
 
-  var insertsql = 'insert into postTbl (bignum,middlenum, title,description,close,cansee,videourl,videotime,author) values (?,?,?,?,?,?,?,?,?)';
-  var params = [bignum,middlenum,posttitle,summernoteContent,close,cansee,videourl,videotime,'큔'];
+  var insertsql = 'insert into postTbl (middlenum, title,description,close,cansee,videourl,videotime,author,count) values (?,?,?,?,?,?,?,?,?)';
+  var params = [middlenum,posttitle,summernoteContent,close,cansee,videourl,videotime,'큔','0'];
   client.query(insertsql, params, function (err, rows, fields) {
     if (err) {
       loger.error('post insert 쿼리에 오류가 있습니다. - /write/postsave - write.js');

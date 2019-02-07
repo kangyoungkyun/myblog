@@ -37,19 +37,47 @@
 
         <hr>
 
-        <h2 class="page-header">강의목록</h2>
+        <h2 class="page-header">강좌구성</h2>
         
         <%if (middlerows != undefined) { %>
             <% for (var i = 0; i < middlerows.length; i++) {  %>
                 <div class="row">
                         <div class="col-md-5">
-                            <h3><%=middlerows[i]['title']%></h3>
-                            
+                            <h4><%=middlerows[i]['title']%></h4>
                             <p id = "description<%=i%>"></p>
-                            <br>
-                            <h4>1.소분류 제목</h4>
-                            <h4>2.소분류 제목</h4>
                             
+
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+
+                        <div class="col-md-5"><br>
+                            <table class="table">
+                                <thead>
+                                        <tr>
+                                            <th>강좌명</th>
+                                            <th>길이</th>
+                                            
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                    <%if (postrows != undefined) { %>
+                                        <% for (var ii = 0; ii < postrows.length; ii++) {  %>
+                                            <%if (postrows[ii]['middlenum'] == middlerows[i]['middlenum']) { %>
+                                                <tr>
+                                                        <!-- <td><%=postrows[ii]['postnum']%></td> -->
+                                                        <td><a href="/read/readpost?postnum=<%=postrows[ii]['postnum']%>&bignum=<%=middlerows[i]['bignum']%>"><%=postrows[ii]['title']%></a></td>
+                                                        <td><%=postrows[ii]['videotime']%></td>
+                                                </tr>
+                                            <%}%>
+                                        <% } %>
+                                    <% } %>
+
+
+                                </tbody>
+                              </table>
+
                         </div>
 
                         <script>
@@ -68,7 +96,7 @@
 
                 <!-- /.row -->
         
-                <hr>
+               
         
     </div>
 

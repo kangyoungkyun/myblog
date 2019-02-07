@@ -15,7 +15,7 @@ var options = {                                         //session을 mysql db에
   host	: 'localhost',
   port	: 3306,
   user	: 'root',
-  password: 'eorn1145',		                              //데이터베이스 접근 비밀번호
+  password: '1111',		                              //데이터베이스 접근 비밀번호
   database: 'mydb2'		                                  //데이터베이스의 이름
   };
   

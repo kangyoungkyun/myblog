@@ -161,7 +161,29 @@ router.get('/read/readpost', function (req, res, next) {
 });
 
 
+
+/* 대분류 수정 */
+router.get('/read/bigmodify', function (req, res, next) {
+  //대분류 메뉴명 가져옴
+  selectMenuQuery(function (err, menuResult) {
+    if (err) {
+      loger.info(err);
+    } else {
+
+      if (menuResult.length == 0) {
+        res.render('read/bigmodify', {
+          rows: undefined
+        });
+      } else {
+        res.render('read/bigmodify', {
+          rows: menuResult
+        });
+      }
+
+    }
+  });
+});
+
 module.exports = router;
 loger.info("메모리 로딩 완료. - read.js");
-
 

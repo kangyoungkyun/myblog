@@ -182,7 +182,7 @@ router.post('/write/postsave',function (req, res, next) {
   var middlenum = req.body.middlenum;         
   var summernoteContent = req.body.summernoteContent;         
 
-  var insertsql = 'insert into postTbl (middlenum, title,description,close,cansee,videourl,videotime,author,count) values (?,?,?,?,?,?,?,?,?)';
+  var insertsql = 'insert into postTbl (middlenum, title,description,close,cansee,videourl,videotime,author,cnt) values (?,?,?,?,?,?,?,?,?)';
   var params = [middlenum,posttitle,summernoteContent,close,cansee,videourl,videotime,'큔','0'];
   client.query(insertsql, params, function (err, rows, fields) {
     if (err) {

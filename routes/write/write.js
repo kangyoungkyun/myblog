@@ -224,6 +224,62 @@ router.post('/write/getMiddleTitle', function (req, res, next) {
 
 
 
+/* 나의 포스터  작성 페이지 (대분류 중분류 소분류 아님! 오직 글과 이미지!)*/
+router.get('/write/writepost', function (req, res, next) {
+  //대분류 메뉴명 가져옴
+  selectMenuQuery(function(err, menuResult) {
+    if(err){
+      loger.info(err);
+    }else{
+      if(menuResult.length == 0){
+        res.render('write/writepost',{
+          rows:undefined
+        });
+      }else{
+        res.render('write/writepost',{
+          rows:menuResult
+        });
+      }
+    }
+  }); 
+});
+
+
+
+/* 나의 포스터  이미지 저장 */
+var uploadImages = multer({
+  storage: multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, 'public/mypostimages/');
+    },
+    filename: function (req, file, cb) {
+      cb(null, file.originalname);
+    }
+  }),
+});
+//사진 파일 선택하면 바로 콜
+router.post('/write/writepostimagesave', uploadImages.single('file'), function (req, res, next) {
+  loger.info('나의 포스터  사진 저장 진입  - /write/writepostimagesave - write.js');
+  res.send({ url: "/mypostimages/" + req.file['originalname']});
+});
+
+
+//나의 포스터 저장 액션!
+router.post('/write/writepostsave', function (req, res, next) {
+  loger.info('나의 포스터 저장 진입  - /write/writepostsave - write.js');
+
+  var posttitle = req.body.posttitle;                                                          
+  var close = req.body.close;                                                  
+  var middlenum = req.body.middlenum;         
+  var summernoteContent = req.body.summernoteContent;      
+  
+  loger.info(posttitle);
+  loger.info(close);
+  loger.info(middlenum);
+  loger.info(summernoteContent);
+
+
+});
 
 
 module.exports = router;

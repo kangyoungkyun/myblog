@@ -279,6 +279,20 @@ router.post('/write/writepostsave', function (req, res, next) {
   loger.info(middlenum);
   loger.info(summernoteContent);
 
+  var insertsql = 'insert into postTbl (middlenum, title,description,close,cansee,videourl,videotime,author,cnt) values (?,?,?,?,?,?,?,?,?)';
+  var params = [middlenum,posttitle,summernoteContent,close,"","","",'큔','0'];
+  client.query(insertsql, params, function (err, rows, fields) {
+    if (err) {
+      loger.error('post insert 쿼리에 오류가 있습니다. - /write/writepostsave - write.js');
+      loger.error(err);
+    } else {
+      if(rows.insertId){
+        res.send({ result: 'success' , tocken:'저장성공'});
+      }else{
+        res.send({ result: 'fail' , tocken:'저장실패'});
+      }
+    }
+  });
 
 });
 

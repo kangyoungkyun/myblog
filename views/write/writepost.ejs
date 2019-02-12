@@ -71,10 +71,17 @@
                     for (var i = files.length - 1; i >= 0; i--) {
                         sendFile(files[i], this);
                     }
+                },
+                
+                onMediaDelete: function (target) {
+                    alert(target[0].src) 
+                    deleteFile(target[0].src);
                 }
             }
         });
     });
+
+    //사진 파일 저장
     function sendFile(file, el) {
         var form_data = new FormData();
         form_data.append('file', file);
@@ -87,6 +94,19 @@
             processData: false,
             success: function (url) {
                 $('#summernote').summernote('editor.insertImage', url['url']);
+            }
+        });
+    }
+
+    //사진 파일 삭제
+    function deleteFile(src) {
+        $.ajax({
+            data: { src: src },
+            type: "POST",
+            url: '/write/writepostimagedelete',
+            cache: false,
+            success: function (resp) {
+            console.log(resp);
             }
         });
     }

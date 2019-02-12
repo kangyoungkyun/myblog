@@ -4,6 +4,7 @@ var loger = require('../../logmodule.js');                  //로그모듈
 var multer = require('multer')                              //파일관련 모듈
 var client = require('../../config/mysqlconfig.js');        //mysql 모듈
 var selectMenuQuery = require('../selectmenuquery.js');     //메뉴명 가져오는 쿼리 모듈
+var fs = require('fs');                                     //파일 시스템 모듈
 loger.info("메모리 로딩 시작. - write.js");
 
 
@@ -280,6 +281,28 @@ router.post('/write/writepostsave', function (req, res, next) {
 
 
 });
+
+
+//나의 포스터 저장 액션!
+router.post('/write/writepostimagedelete', function (req, res, next) {
+  loger.info('나의 포스터 이미지 삭제 진입  - /write/writepostimagedelete - write.js');
+
+  var beforeSrc = req.body.src;
+  var afterSrc = beforeSrc.split('/');
+  var filename = afterSrc.slice(-1)[0];     //제일 마지막 배열 요소 가져오기
+                                                      
+  fs.unlink('./public/mypostimages/'+ filename,function (err) {
+    if (err) throw err;
+    console.log('successfully deleted ./public/mypostimages/'+filename);
+  });
+
+
+});
+
+
+
+
+
 
 
 module.exports = router;

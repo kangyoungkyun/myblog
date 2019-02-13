@@ -116,8 +116,8 @@
                     //2.엘리먼트 동적 추가
                     var html = '<option>중분류</option>';
                     for (var i = 0; i < data['data'].length; i++) {
-                        var middletitle = data['data'][i]['title'];
-                        html += '<option value= ' + (i+1) + '>' + middletitle  + '</option>';
+                        var middletitlenum = data['data'][i]['middlenum'];
+                        html += '<option value= ' + middletitlenum + '>' + middletitle + '</option>';
                     }
 
                     //3.붙이기

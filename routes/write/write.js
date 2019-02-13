@@ -274,9 +274,9 @@ router.post('/write/writepostsave', function (req, res, next) {
   var middlenum = req.body.middlenum;         
   var summernoteContent = req.body.summernoteContent;      
   
-  loger.info(posttitle);
-  loger.info(close);
-  loger.info(middlenum);
+  loger.info(posttitle);  //중급길 1
+  loger.info(close);      //false
+  loger.info(middlenum);  //1
   loger.info(summernoteContent);
 
   var insertsql = 'insert into postTbl (middlenum, title,description,close,cansee,videourl,videotime,author,cnt) values (?,?,?,?,?,?,?,?,?)';
@@ -297,7 +297,7 @@ router.post('/write/writepostsave', function (req, res, next) {
 });
 
 
-//나의 포스터 저장 액션!
+//나의 포스터 삭제 액션!
 router.post('/write/writepostimagedelete', function (req, res, next) {
   loger.info('나의 포스터 이미지 삭제 진입  - /write/writepostimagedelete - write.js');
 

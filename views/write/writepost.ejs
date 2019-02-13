@@ -4,203 +4,105 @@
     <% include ../header %>
 
     <div class="col-md-9">
-        <br>
-        <br>
-        <br>
-                <div class="row"> 
-                    <div class="col-md-2">
-                            <select title=“대분류” class="form-control" id="bigtitle" onchange="bigtitleSelect()">
-                                    <option>대분류</option>
-                                    <%if (rows != undefined) { %>
-                                        <% for (var i = 0; i < rows.length; i++) {  %>
-                                            <option value="<%= rows[i]['bignum'] %>"><%=rows[i]['title']%></option>
-                                        <% } %>
-                                    <% } else { %>
-                                        <option value="">강좌가 없습니다</option>
-                                    <% } %>
-                            </select>
-                    </div><!-- /col-md-2 -->
-
-                    <div class="col-md-2">
-                            <select class="form-control" id="middletitle">
-                                <option>중분류</option>
-                            </select>
-                    </div><!-- /col-md-2 -->
-
-                    <div class="col-md-6">
-                        <input type="text" id = "posttitle" class="form-control" aria-label="제목" placeholder="제목">
-                    </div>
-
-                    <div class="col-md-2">
-                        <label class="checkbox-inline"><input type="checkbox" value="" id="close">비공개</label>
-                    </div><!-- /col-md-2 -->
-
-                </div><!-- row -->
-            
-            
-            <br>
-
-            <div id="summernote"></div>
-
-            <br>
-            <br>
+            <!-- Page Heading -->
             <div class="row">
-                <div class="text-center">
-                    <button type="button" class="btn btn-success btn-md text-center" id="saveBtn">작성</button>
-                    
+                    <div class="col-lg-12">
+                    <%if (onerow != undefined) { %>
+                        <h1 class="page-header"><%=onerow[0]['title']%>
+                            <small><%=onerow[0]['lang']%> <%=onerow[0]['section']%>강좌</small>
+                        </h1>
+                        
+                           
+                            <div id="description"></div>
+                            <a href="<%=onerow[0]['fileurl']%>" class="btn btn-primary" role="button">파일다운로드</a>
+
+                            <%if (onerow[0]['pay'] == 'false') { %>
+                                <div class="text-right"><span class="label label-success">무료</span>&nbsp<span class="label label-default">₩ <%=onerow[0]['price']%></span></div>
+                            <% } else { %>
+                                <div class="text-right"><span class="label label-info text-right">유료</span>&nbsp<span class="label label-default">₩ <%=onerow[0]['price']%></span></div>
+                            <%} %>
+                            
+                            <script>
+                                    var htmlTag = "<%=onerow[0]['description']%>";  
+                                    var changeToText = $("<div></div>").html(htmlTag).text();
+                                    document.getElementById("description").innerHTML = changeToText;
+                                    //console.log(changeToText); 
+                            </script> 
+                    <% } %>
+                    <br>
+                    <br>
+                    <br>
                 </div>
-            </div>
+                <!-- /.row -->
+
+        <hr>
+
+        <h2 class="page-header">강좌구성</h2>
+        
+        <%if (middlerows != undefined) { %>
+            <% for (var i = 0; i < middlerows.length; i++) {  %>
+                <div class="row">
+                        <div class="col-md-5">
+                            <h4><%=middlerows[i]['title']%></h4>
+                            <p id = "description<%=i%>"></p>
+                            
+
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+
+                        <div class="col-md-5"><br>
+                            <table class="table">
+                                <thead>
+                                        <tr>
+                                            <th>강좌명</th>
+                                            <th>길이</th>
+                                            
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                    <%if (postrows != undefined) { %>
+                                        <% for (var ii = 0; ii < postrows.length; ii++) {  %>
+                                            <%if (postrows[ii]['middlenum'] == middlerows[i]['middlenum']) { %>
+                                                <tr>
+                                                        <!-- <td><%=postrows[ii]['postnum']%></td> -->
+                                                        <td><a href="/read/readpost?postnum=<%=postrows[ii]['postnum']%>&bignum=<%=middlerows[i]['bignum']%>"><%=postrows[ii]['title']%></a></td>
+                                                        <td><%=postrows[ii]['videotime']%></td>
+                                                </tr>
+                                            <%}%>
+                                        <% } %>
+                                    <% } %>
+
+
+                                </tbody>
+                              </table>
+
+                        </div>
+
+                        <script>
+                                var htmlTag = "<%=middlerows[i]['description']%>";  
+                                var changeToText = $("<div></div>").html(htmlTag).text();
+                                document.getElementById("description" + "<%=i%>").innerHTML = changeToText;
+                                
+                        </script> 
+                </div>
+                <hr>
+            <% } %>
+        <% } %>
+
+                <!-- /.row -->
+        
+               
+        
     </div>
 
-
+</div>
     <% include ../footer %>
  
-<script>
-    $(document).ready(function () {
-      //저장
-      $(document).on('click', '#saveBtn', function () {
-        saveContent();
-      });
+    <script>
 
-        $("#summernote").summernote({
-            placeholder: '일단..써',
-            height: 500,
-            callbacks: {
-                onImageUpload: function (files, editor, welEditable) {
-
-                    for (var i = files.length - 1; i >= 0; i--) {
-                        sendFile(files[i], this);
-                    }
-                },
-                
-                onMediaDelete: function (target) {
-                    alert(target[0].src) 
-                    deleteFile(target[0].src);
-                }
-            }
-        });
-    });
-
-    //사진 파일 저장
-    function sendFile(file, el) {
-        var form_data = new FormData();
-        form_data.append('file', file);
-        $.ajax({
-            data: form_data,
-            type: "POST",
-            url: '/write/writepostimagesave',
-            cache: false,
-            contentType: false,
-            processData: false,
-            success: function (url) {
-                $('#summernote').summernote('editor.insertImage', url['url']);
-            }
-        });
-    }
-
-    //사진 파일 삭제
-    function deleteFile(src) {
-        $.ajax({
-            data: { src: src },
-            type: "POST",
-            url: '/write/writepostimagedelete',
-            cache: false,
-            success: function (resp) {
-            console.log(resp);
-            }
-        });
-    }
-
-
-    //대분류 클릭하면 해당 중분류 뿌려주기
-    function bigtitleSelect() {
-
-        var bigtitleSelect = document.getElementById("bigtitle");
-        var bigtitlevalue = bigtitleSelect.options[bigtitleSelect.selectedIndex].value;
-
-        //대분류 클릭하면 해당 중분류 뿌려주기
-        $.ajax({
-            url: '/write/getMiddleTitle',
-            dataType: 'json',
-            type: 'post',
-            data: {
-                bignum: bigtitlevalue
-            },
-            success: function (data) {
-                if (data['result'] == 'success') {
-
-                    //1.대분류 선택할 때마다 엘리먼트 지워주기
-                    var myNode = document.getElementById("middletitle");
-                    while (myNode.firstChild) {
-                        myNode.removeChild(myNode.firstChild);
-                    }
-
-                    //2.엘리먼트 동적 추가
-                    var html = '<option>중분류</option>';
-                    for (var i = 0; i < data['data'].length; i++) {
-                        var middletitle = data['data'][i]['title'];
-                        html += '<option value= ' + (i + 1) + '>' + middletitle + '</option>';
-                    }
-
-                    //3.붙이기
-                    $("#middletitle").append(html);
-
-
-                } else if (data['result'] == 'fail') {
-                    alert(data['tocken']);
-                    return;
-                }
-            },
-            error: function (jqXHR, textStatus, err) {
-                //show error message
-                alert('죄송합니다. 작업중 오류가 발생했습니다.' + "상태 : " + textStatus + ', error : ' + err);
-            }
-        });
-    }
-
-
-    //저장
-    function saveContent() {
-
-        var posttitle = $("#posttitle").val();                                  //포스트 제목
-        var close = $("#close").is(":checked");                                 //비공개
-
-        var middleSelect = document.getElementById("middletitle");              //중분류 pk
-        var middlenum = middleSelect.options[middleSelect.selectedIndex].value;
-        var middletext = middleSelect.options[middleSelect.selectedIndex].text;
-        var summernoteContent = $('#summernote').summernote('code');        //썸머노트(중분류설명)
-
-
-        $.ajax({
-            url: '/write/writepostsave',
-            dataType: 'json',
-            type: 'post',
-            data: {
-                posttitle: posttitle,
-                close: close,
-                middlenum: middlenum,
-                summernoteContent: summernoteContent
-            },
-            success: function (data) {
-
-                if (data['result'] == 'success') {
-                    alert(data['tocken']);
-                    location.reload();
-                } else if (data['result'] == 'fail') {
-                    alert(data['tocken']);
-                    return;
-                }
-            },
-            error: function (jqXHR, textStatus, err) {
-                //show error message
-                alert('죄송합니다. 작업중 오류가 발생했습니다.' + "상태 : " + textStatus + ', error : ' + err);
-            }
-        });
-
-    }
-    
-</script>
-        
+    </script>
                  
   </body>
 

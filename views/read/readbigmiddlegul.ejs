@@ -1,0 +1,91 @@
+
+    <% include ../head %>
+
+    <% include ../header %>
+
+    <div class="col-md-9">
+            <!-- Page Heading -->
+            <div class="row">
+                    <div class="col-lg-12">
+                    <%if (onerow != undefined) { %>
+                        <h1 class="page-header"><%=onerow[0]['title']%>
+                            <small><%=onerow[0]['lang']%></small>
+                            <!-- <small><%=onerow[0]['lang']%> <%=onerow[0]['section']%></small> -->
+                        </h1>
+                        
+<!--                            
+                            <div id="description"></div>
+
+                            <script>
+                                    var htmlTag = "<%=onerow[0]['description']%>";  
+                                    var changeToText = $("<div></div>").html(htmlTag).text();
+                                    document.getElementById("description").innerHTML = changeToText;
+                                    //console.log(changeToText); 
+                            </script>  -->
+                    <% } %>
+                </div>
+                <!-- /.row -->
+
+        <hr>
+
+        
+        <%if (middlerows != undefined) { %>
+            <% for (var i = 0; i < middlerows.length; i++) {  %>
+                <div class="row">
+                        <div class="col-md-12">
+                            <h4><%=middlerows[i]['title']%></h4>
+  
+
+                            <div class="col-md-12"><br>
+                                <table class="table">
+                                    <thead>
+                                            <tr>
+                                                <th>글제목</th>
+                                            </tr>
+                                    </thead>
+                                    <tbody>
+                                        <%if (postrows != undefined) { %>
+                                            <% for (var ii = 0; ii < postrows.length; ii++) {  %>
+                                                <%if (postrows[ii]['middlenum'] == middlerows[i]['middlenum']) { %>
+                                                    <tr>
+                                                            <!-- <td><%=postrows[ii]['postnum']%></td> -->
+                                                            <td><a href="/read/readpostgul?postnum=<%=postrows[ii]['postnum']%>&bignum=<%=middlerows[i]['bignum']%>"><%=postrows[ii]['title']%></a></td>
+                                                            
+                                                    </tr>
+                                                <%}%>
+                                            <% } %>
+                                        <% } %>
+    
+    
+                                    </tbody>
+                                  </table>
+    
+                            </div>
+
+
+                        </div>
+                </div>
+                <hr>
+            <% } %>
+        <% } %>
+
+
+
+
+
+                <!-- /.row -->
+        
+               
+        
+    </div>
+
+</div>
+    <% include ../footer %>
+ 
+    <script>
+
+    </script>
+                 
+  </body>
+
+</html>

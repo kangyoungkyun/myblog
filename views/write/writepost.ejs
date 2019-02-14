@@ -10,9 +10,9 @@
                 <div class="col-md-2">
                         <select title=“대분류” class="form-control" id="bigtitle" onchange="bigtitleSelect()">
                                 <option>대분류</option>
-                                <%if (rows != undefined) { %>
-                                    <% for (var i = 0; i < rows.length; i++) {  %>
-                                        <option value="<%= rows[i]['bignum'] %>"><%=rows[i]['title']%></option>
+                                <%if (selectrows != undefined) { %>
+                                    <% for (var i = 0; i < selectrows.length; i++) {  %>
+                                        <option value="<%= selectrows[i]['bignum'] %>"><%=selectrows[i]['title']%></option>
                                     <% } %>
                                 <% } else { %>
                                     <option value="">강좌가 없습니다</option>

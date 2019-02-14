@@ -10,7 +10,7 @@ loger.info("메모리 로딩 시작. - write.js");
 
 /* 대분류 작성*/
 router.get('/write/bigwrite', function (req, res, next) {
-  //대분류 메뉴명 가져옴
+  //대분류 작성 페이지 왼쪽 메뉴명 가져옴 - 필요함!
   selectMenuQuery(function(err, menuResult) {
     if(err){
       loger.info(err);
@@ -26,25 +26,38 @@ router.get('/write/bigwrite', function (req, res, next) {
       }
     }
   });
-
-
 });
 
 /* 중분류 작성*/
 router.get('/write/middlewrite', function (req, res, next) {
-  //대분류 메뉴명 가져옴
+  //대분류 작성 페이지 왼쪽 메뉴명 가져옴 - 필요함!
   selectMenuQuery(function(err, menuResult) {
     if(err){
       loger.info(err);
     }else{
       if(menuResult.length == 0){
         res.render('write/middlewrite',{
-          rows:undefined
+          rows:undefined,
+          selectrows: undefined
         });
       }else{
-        res.render('write/middlewrite',{
-          rows:menuResult
-        });
+
+        //중분류 글쓰기에서 대분류 셀렉트 박스 선택 위한 조회 쿼리
+        var sql = 'select * from bigTbl';
+        client.query(sql, function (err, selectrows, results) {
+          if (err) {
+            loger.info(err);
+            return;
+          } else {
+
+            res.render('write/middlewrite',{
+              rows:menuResult,
+              selectrows : selectrows
+            });
+          }
+        }); 
+
+
       }
     }
   }); 
@@ -52,19 +65,31 @@ router.get('/write/middlewrite', function (req, res, next) {
 
 /* 소분류 작성 */
 router.get('/write/write', function (req, res, next) {
-  //대분류 메뉴명 가져옴
+  //대분류 작성 페이지 왼쪽 메뉴명 가져옴 - 필요함!
   selectMenuQuery(function(err, menuResult) {
     if(err){
       loger.info(err);
     }else{
       if(menuResult.length == 0){
         res.render('write/write',{
-          rows:undefined
+          rows:undefined,
+          selectrows: undefined
         });
       }else{
-        res.render('write/write',{
-          rows:menuResult
-        });
+
+        //영상 소분류 글쓰기에서 대분류 셀렉트 박스 선택 위한 조회 쿼리
+        var sql = 'select * from bigTbl';
+        client.query(sql, function (err, selectrows, results) {
+          if (err) {
+            loger.info(err);
+            return;
+          } else {
+            res.render('write/write', {
+              rows: menuResult,
+              selectrows: selectrows
+            });
+          }
+        }); 
       }
     }
   }); 
@@ -227,19 +252,32 @@ router.post('/write/getMiddleTitle', function (req, res, next) {
 
 /* 나의 포스터  작성 페이지 (대분류 중분류 소분류 아님! 오직 글과 이미지!)*/
 router.get('/write/writepost', function (req, res, next) {
-  //대분류 메뉴명 가져옴
+  //대분류 작성 페이지 왼쪽 메뉴명 가져옴 - 필요함!
   selectMenuQuery(function(err, menuResult) {
     if(err){
       loger.info(err);
     }else{
       if(menuResult.length == 0){
         res.render('write/writepost',{
-          rows:undefined
+          rows:undefined,
+          selectrows: undefined
         });
       }else{
-        res.render('write/writepost',{
-          rows:menuResult
-        });
+
+        //글 소분류 글쓰기에서 대분류 셀렉트 박스 선택 위한 조회 쿼리
+        var sql = 'select * from bigTbl';
+        client.query(sql, function (err, selectrows, results) {
+          if (err) {
+            loger.info(err);
+            return;
+          } else {
+            res.render('write/writepost', {
+              rows: menuResult,
+              selectrows: selectrows
+            });
+          }
+        }); 
+
       }
     }
   }); 

@@ -15,21 +15,15 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                   <li>
-                      <a href="/read/readbigmiddle">중분류읽기</a>
-                  </li>
-                  <li>
-                      <a href="/read/readpost">글읽기</a>
-                  </li>
-                  <li>
                       <a href="/write/bigwrite">대분류(강좌개설)</a>
                   </li>
                   <li>
                       <a href="/write/middlewrite">중분류(소제목)</a>
                   </li>
                   <li>
-                      <a href="/write/write">소분류(글쓰기)</a>
+                      <a href="/write/write">소분류(영상글쓰기)</a>
                   </li>
-                  <li>
+                  <!-- <li>
                         <a href="/apply/apply">신청하기</a>
                  </li>
                  <li>
@@ -40,7 +34,7 @@
                 </li>
                 <li>
                     <a href="/read/bigmodify">대분류조회</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="/write/writepost">포스터쓰기</a>
                 </li>
@@ -59,13 +53,13 @@
       <div class="row">
 
           <div class="col-md-3">
-              
+
                 <p class="lead">Colum</p>
                 <div class="list-group">
                     <%if (rows != undefined) { %>
                         <% for (var i = 0; i < rows.length; i++) {  %>
                             <%if (rows[i]['close'] != 'true' && rows[i]['section'] == '글') { %>
-                                <a href="/read/readbigmiddlegul?num=<%=rows[i]['bignum']%>" class="list-group-item"><%=rows[i]['title']%></a>
+                                <a href="/read/readbigmiddlegul?num=<%=rows[i]['bignum']%>" class="list-group-item"><%=rows[i]['title']%><span class="badge"><%=rows[i]['cnt']%></span></a>
                             <% } %>
                         <% } %>
                     <% } else { %>
@@ -80,7 +74,7 @@
             <%if (rows != undefined) { %>
                 <% for (var i = 0; i < rows.length; i++) {  %>
                     <%if (rows[i]['close'] != 'true' && rows[i]['section'] == '영상') { %>
-                        <a href="/read/readbigmiddle?num=<%=rows[i]['bignum']%>" class="list-group-item"><%=rows[i]['title']%></a>
+                        <a href="/read/readbigmiddle?num=<%=rows[i]['bignum']%>" class="list-group-item"><%=rows[i]['title']%><span class="badge"><%=rows[i]['cnt']%></span></a>
                     <% } %>
                 <% } %>
             <% } else { %>

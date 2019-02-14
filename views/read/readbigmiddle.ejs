@@ -14,7 +14,7 @@
                         
                            
                             <div id="description"></div>
-                            <a href="<%=onerow[0]['fileurl']%>" class="btn btn-primary" role="button">파일다운로드</a>
+                            <!-- <a href="<%=onerow[0]['fileurl']%>" class="btn btn-primary" role="button">파일다운로드</a> -->
 
                             <%if (onerow[0]['pay'] == 'false') { %>
                                 <div class="text-right"><span class="label label-success">무료</span>&nbsp<span class="label label-default">₩ <%=onerow[0]['price']%></span></div>
@@ -56,6 +56,7 @@
                             <table class="table">
                                 <thead>
                                         <tr>
+                                            <th>번호</th>
                                             <th>강좌명</th>
                                             <th>길이</th>
                                             
@@ -66,7 +67,7 @@
                                         <% for (var ii = 0; ii < postrows.length; ii++) {  %>
                                             <%if (postrows[ii]['middlenum'] == middlerows[i]['middlenum']) { %>
                                                 <tr>
-                                                        <!-- <td><%=postrows[ii]['postnum']%></td> -->
+                                                        <td><%=(ii+1)%></td>
                                                         <td><a href="/read/readpost?postnum=<%=postrows[ii]['postnum']%>&bignum=<%=middlerows[i]['bignum']%>"><%=postrows[ii]['title']%></a></td>
                                                         <td><%=postrows[ii]['videotime']%></td>
                                                 </tr>

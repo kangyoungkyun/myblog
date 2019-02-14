@@ -36,8 +36,12 @@
                                     <div class="thumbnail">
                                         <img src="<%=rows[i]['image']%>" alt="" style="width: 135px; height: 180px">
                                         <div class="caption">
-                                            <h4 class="pull-right">₩ <%=rows[i]['price']%></h4>
+                                            <!-- <h4 class="pull-right">₩ <%=rows[i]['price']%></h4> -->
+                                            <%if (rows[i]['section'] == '영상' ) { %>
                                             <h4><a href="/read/readbigmiddle?num=<%=rows[i]['bignum']%>"><%=rows[i]['title']%></a>
+                                            <% } else { %>
+                                                <h4><a href="/read/readbigmiddlegul?num=<%=rows[i]['bignum']%>"><%=rows[i]['title']%></a>
+                                            <% } %>
                                             </h4>
         
                                             <p id="description<%=i%>"></p>

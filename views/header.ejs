@@ -55,26 +55,25 @@
   <!-- Page Content -->
   <div class="container">
 
-    <div class="row">
-        <div class="col-md-3">
-            <p class="lead">Colum</p>
-            <div class="list-group">
-                <%if (rows != undefined) { %>
-                    <% for (var i = 0; i < rows.length; i++) {  %>
-                        <%if (rows[i]['close'] != 'true' && rows[i]['section'] == '글') { %>
-                            <a href="/read/readbigmiddlegul?num=<%=rows[i]['bignum']%>" class="list-group-item"><%=rows[i]['title']%></a>
-                        <% } %>
-                    <% } %>
-                <% } else { %>
-                    <a href="#" class="list-group-item">ready...</a>
-                <% } %>
-            </div>
-        </div>
-    </div>
-
 
       <div class="row">
+
           <div class="col-md-3">
+              
+                <p class="lead">Colum</p>
+                <div class="list-group">
+                    <%if (rows != undefined) { %>
+                        <% for (var i = 0; i < rows.length; i++) {  %>
+                            <%if (rows[i]['close'] != 'true' && rows[i]['section'] == '글') { %>
+                                <a href="/read/readbigmiddlegul?num=<%=rows[i]['bignum']%>" class="list-group-item"><%=rows[i]['title']%></a>
+                            <% } %>
+                        <% } %>
+                    <% } else { %>
+                        <a href="#" class="list-group-item">ready...</a>
+                    <% } %>
+                </div>
+
+
               <p class="lead">Video</p>
               <div class="list-group">
 

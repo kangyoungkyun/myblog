@@ -290,7 +290,7 @@ router.get('/read/readpostgul', function (req, res, next) {
         });
       } else {
 
-        //소분류 글 조회
+        //포스트 글 조회
         var sql = 'select * from postTbl where postnum = ?';
         client.query(sql, [postnum], function (err, postonerow, results) {
           if (err) {
@@ -300,6 +300,18 @@ router.get('/read/readpostgul', function (req, res, next) {
 
             //포스트 글 존재.
             if (postonerow.length > 0) {
+              
+              var newcnt = Number(postonerow[0]['cnt']) + 1;
+
+              //조회수 조회해서 +1 한 후 업데이트!
+              var cntupatesql = 'update postTbl set cnt= ' + newcnt + ' where postnum= ?';
+              client.query(cntupatesql, [postnum], function (err5, postrows, results) {
+                if (err5) {
+                  loger.error('내포스트 조회수 업데이트 문장에 오류가 있습니다. - /read/readpostgul - /read.js');
+                  loger.error(err5);
+                } else {
+
+              //조회수 업데이트 성공!
 
               //중분류 + 소분류 글 전체 조회
               var sql4 =  'select * from postTbl p, middleTbl m where p.middlenum = m.middlenum ' +
@@ -307,30 +319,32 @@ router.get('/read/readpostgul', function (req, res, next) {
                           '(select m.middlenum from bigTbl b, middleTbl m ' +
                           'where b.bignum = m.bignum and b.bignum = ?)';
 
-              client.query(sql4, [bignum], function (err4, postrows, results) {
-                if (err4) {
-                  loger.error('내포스트 글 조회 문장에 오류가 있습니다. - /read/readpostgul - /read.js');
-                  loger.error(err4);
-                } else {
+                  client.query(sql4, [bignum], function (err4, postrows, results) {
+                    if (err4) {
+                      loger.error('내포스트 글 조회 문장에 오류가 있습니다. - /read/readpostgul - /read.js');
+                      loger.error(err4);
+                    } else {
 
-                  //소분류 글 존재할때
-                  if (postrows.length > 0) {
-                    loger.info("포스트 글 존재!");
-                    res.render('read/readpostgul', {
-                      rows: menuResult,
-                      postonerow: postonerow,
-                      postrows:postrows
-                    });
+                      //소분류 글 존재할때
+                      if (postrows.length > 0) {
+                        loger.info("포스트 글 존재!");
+                        res.render('read/readpostgul', {
+                          rows: menuResult,
+                          postonerow: postonerow,
+                          postrows: postrows
+                        });
 
-                    //소분류 글 존재 (x)   
-                  } else {
-                    loger.info("포스트 글 존재 안함!");
-                    res.render('read/readpostgul', {
-                      rows: menuResult,
-                      postonerow: undefined,
-                      postrows:undefined
-                    });
-                  }
+                        //소분류 글 존재 (x)   
+                      } else {
+                        loger.info("포스트 글 존재 안함!");
+                        res.render('read/readpostgul', {
+                          rows: menuResult,
+                          postonerow: undefined,
+                          postrows: undefined
+                        });
+                      }
+                    }
+                  });
                 }
               });
 
@@ -340,6 +354,8 @@ router.get('/read/readpostgul', function (req, res, next) {
                 postonerow: undefined
               });
             }
+
+
           }
         });
       }

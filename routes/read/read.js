@@ -162,7 +162,7 @@ router.get('/read/readpost', function (req, res, next) {
 
 
 
-/* 중분류 보기 */
+/* 마이 포스트 글 중분류 보기 */
 router.get('/read/readbigmiddlegul', function (req, res, next) {
 
   var bignum = req.query.num;       //대분류 pk 값
@@ -199,7 +199,7 @@ router.get('/read/readbigmiddlegul', function (req, res, next) {
                   //소분류 글 조회
                   var sql4 = 'select * from postTbl where middlenum in ' +
                             '(select m.middlenum from bigTbl b, middleTbl m where b.bignum = m.bignum ' +
-                            'and b.bignum = ?)';
+                            'and b.bignum = ?) ORDER BY postnum DESC';
                   client.query(sql4, [bignum], function (err4, postrows, results) {
                     if (err4) {
                       loger.error('소분류 글 조회 문장에 오류가 있습니다. - /read/readbigmiddlegul - /read.js');
@@ -294,7 +294,7 @@ router.get('/read/readpostgul', function (req, res, next) {
         var sql = 'select * from postTbl where postnum = ?';
         client.query(sql, [postnum], function (err, postonerow, results) {
           if (err) {
-            loger.error('소분류 글 조회 문장에 오류가 있습니다. - /read/readpostgul - /read.js');
+            loger.error('내포스트 글 조회 문장에 오류가 있습니다. - /read/readpostgul - /read.js');
             loger.error(err);
           } else {
 
@@ -309,12 +309,13 @@ router.get('/read/readpostgul', function (req, res, next) {
 
               client.query(sql4, [bignum], function (err4, postrows, results) {
                 if (err4) {
-                  loger.error('소분류 글 조회 문장에 오류가 있습니다. - /read/readpostgul - /read.js');
+                  loger.error('내포스트 글 조회 문장에 오류가 있습니다. - /read/readpostgul - /read.js');
                   loger.error(err4);
                 } else {
 
                   //소분류 글 존재할때
                   if (postrows.length > 0) {
+                    loger.info("포스트 글 존재!");
                     res.render('read/readpostgul', {
                       rows: menuResult,
                       postonerow: postonerow,
@@ -323,6 +324,7 @@ router.get('/read/readpostgul', function (req, res, next) {
 
                     //소분류 글 존재 (x)   
                   } else {
+                    loger.info("포스트 글 존재 안함!");
                     res.render('read/readpostgul', {
                       rows: menuResult,
                       postonerow: undefined,

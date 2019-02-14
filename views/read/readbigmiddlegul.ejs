@@ -40,7 +40,11 @@
                                 <table class="table">
                                     <thead>
                                             <tr>
-                                                <th>글제목</th>
+                                                <th>번호</th>
+                                                <th style="width: 60%;">제목</th>
+                                                <th>작성자</th>
+                                                <th>날짜</th>
+                                                <th>조회수</th>
                                             </tr>
                                     </thead>
                                     <tbody>
@@ -48,9 +52,11 @@
                                             <% for (var ii = 0; ii < postrows.length; ii++) {  %>
                                                 <%if (postrows[ii]['middlenum'] == middlerows[i]['middlenum']) { %>
                                                     <tr>
-                                                            <!-- <td><%=postrows[ii]['postnum']%></td> -->
+                                                            <td><%=(ii + 1)%></td>
                                                             <td><a href="/read/readpostgul?postnum=<%=postrows[ii]['postnum']%>&bignum=<%=middlerows[i]['bignum']%>"><%=postrows[ii]['title']%></a></td>
-                                                            
+                                                            <td><%=postrows[ii]['author']%></td>
+                                                            <td><%=postrows[ii]['regdate']%></td>
+                                                            <th><%=postrows[ii]['cnt']%></th>
                                                     </tr>
                                                 <%}%>
                                             <% } %>

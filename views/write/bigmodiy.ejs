@@ -1,0 +1,334 @@
+
+    <% include ../head %>
+
+    <% include ../header %>
+
+    <div class="col-md-9">
+        <br>
+        <br>
+        <br>
+        <%if (onerow != undefined) { %>
+
+            <input type="text" class="hidden" id="bignum" value="<%=onerow[0]['bignum']%>">
+
+            <!-- <div><%=onerow[0]['image']%></div> -->
+        
+                <div class="row"> 
+                    <div class="col-md-2">
+                            <select class="form-control" id="section">
+                                    <option>분류</option>
+                                        <%if (onerow[0]['section'] == '글') { %>
+                                            <option selected>글</option>
+                                            <option>영상</option>
+                                        <% }else if (onerow[0]['section'] == '영상'){ %>
+                                            <option>글</option>
+                                            <option selected>영상</option>
+                                        <% } %>
+                            </select>
+                    </div>
+                    
+                    <div class="col-md-2">
+                        <select class="form-control" id="lang">
+                                <option>언어</option>
+
+                                <%if (onerow[0]['lang'] == 'JavaScript') { %>
+                                    <option selected>JavaScript</option>
+                                    <option>Node.js</option>
+                                    <option>Swift</option>
+                                    <option>ios앱만들기(swift)</option>
+                                    <option>ios앱만들기(Objective-c)</option>
+                                    <option>Objective-c</option>
+                                    <option>Mysql</option>
+                                    <option>데이터베이스</option>
+                                    <option>Android</option>
+                                <% }else if (onerow[0]['lang'] == 'Node.js'){ %>
+                                    <option>JavaScript</option>
+                                    <option selected>Node.js</option>
+                                    <option>Swift</option>
+                                    <option>ios앱만들기(swift)</option>
+                                    <option>ios앱만들기(Objective-c)</option>
+                                    <option>Objective-c</option>
+                                    <option>Mysql</option>
+                                    <option>데이터베이스</option>
+                                    <option>Android</option>
+                                <% }else if (onerow[0]['lang'] == 'Swift'){ %>
+                                    <option>JavaScript</option>
+                                    <option>Node.js</option>
+                                    <option selected>Swift</option>
+                                    <option>ios앱만들기(swift)</option>
+                                    <option>ios앱만들기(Objective-c)</option>
+                                    <option>Objective-c</option>
+                                    <option>Mysql</option>
+                                    <option>데이터베이스</option>
+                                    <option>Android</option>
+                                <% }else if (onerow[0]['lang'] == 'ios앱만들기(swift)'){ %>
+                                    <option>JavaScript</option>
+                                    <option>Node.js</option>
+                                    <option>Swift</option>
+                                    <option selected>ios앱만들기(swift)</option>
+                                    <option>ios앱만들기(Objective-c)</option>
+                                    <option>Objective-c</option>
+                                    <option>Mysql</option>
+                                    <option>데이터베이스</option>
+                                    <option>Android</option>
+                                <% }else if (onerow[0]['lang'] == 'ios앱만들기(Objective-c)'){ %>
+                                    <option>JavaScript</option>
+                                    <option>Node.js</option>
+                                    <option>Swift</option>
+                                    <option>ios앱만들기(swift)</option>
+                                    <option selected>ios앱만들기(Objective-c)</option>
+                                    <option>Objective-c</option>
+                                    <option>Mysql</option>
+                                    <option>데이터베이스</option>
+                                    <option>Android</option>
+                                <% }else if (onerow[0]['lang'] == 'Objective-c'){ %>
+                                    <option>JavaScript</option>
+                                    <option>Node.js</option>
+                                    <option>Swift</option>
+                                    <option>ios앱만들기(swift)</option>
+                                    <option>ios앱만들기(Objective-c)</option>
+                                    <option selected>Objective-c</option>
+                                    <option>Mysql</option>
+                                    <option>데이터베이스</option>
+                                    <option>Android</option>
+                                <% }else if (onerow[0]['lang'] == 'Mysql'){ %>
+                                    <option>JavaScript</option>
+                                    <option>Node.js</option>
+                                    <option>Swift</option>
+                                    <option>ios앱만들기(swift)</option>
+                                    <option>ios앱만들기(Objective-c)</option>
+                                    <option>Objective-c</option>
+                                    <option selected>Mysql</option>
+                                    <option>데이터베이스</option>
+                                    <option>Android</option>
+                                <% }else if (onerow[0]['lang'] == '데이터베이스'){ %>
+                                    <option>JavaScript</option>
+                                    <option>Node.js</option>
+                                    <option>Swift</option>
+                                    <option>ios앱만들기(swift)</option>
+                                    <option>ios앱만들기(Objective-c)</option>
+                                    <option>Objective-c</option>
+                                    <option>Mysql</option>
+                                    <option selected>데이터베이스</option>
+                                    <option>Android</option>
+                                <% }else if (onerow[0]['lang'] == 'Android'){ %>
+                                    <option>JavaScript</option>
+                                    <option>Node.js</option>
+                                    <option>Swift</option>
+                                    <option>ios앱만들기(swift)</option>
+                                    <option>ios앱만들기(Objective-c)</option>
+                                    <option>Objective-c</option>
+                                    <option>Mysql</option>
+                                    <option>데이터베이스</option>
+                                    <option selected>Android</option>
+                                <% } %>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2">
+                       
+                            <%if (onerow[0]['mainclose'] == 'true') { %>
+                                <label class="checkbox-inline"><input type="checkbox" value="" id="mainclose" checked>메인비게시</label>
+                            <% } else{ %>
+                                <label class="checkbox-inline"><input type="checkbox" value="" id="mainclose">메인비게시</label>
+                            <% } %>
+                        
+                    </div><!-- /col-md-2 -->
+                    
+                    <div class="col-md-2">
+                            <input type="text" id = "fileurl" class="form-control" placeholder="파일url" value="<%=onerow[0]['fileurl']%>">
+                    </div><!-- /col-md-4 -->
+
+                    <div class="col-md-4">
+                            <form method="post" enctype="multipart/form-data" id = "imageform">
+                                <input type="file" class="form-control-file" id="fileupload" name="fileupload">
+                            </form>
+                    </div><!-- /col-md-4 -->
+
+                </div>
+                <br>
+
+                <div class="row"> 
+                    <div class="col-md-6">
+                        <input type="text" id = "title" class="form-control" placeholder="대분류 제목" value="<%=onerow[0]['title']%>">
+                    </div>
+
+                    <div class="col-md-2">
+                            <%if (onerow[0]['close'] == 'true') { %>
+                                <label class="checkbox-inline"><input type="checkbox" value="" id="close" checked>비공개</label>
+                            <% } else{ %>
+                                <label class="checkbox-inline"><input type="checkbox" value="" id="close">비공개</label>
+                            <% } %>
+                    </div><!-- /col-md-2 -->
+
+
+                    <div class="col-md-2">
+                            <%if (onerow[0]['pay'] == 'true') { %>
+                                <label class="checkbox-inline"><input type="checkbox" value="" id="pay">유료</label>
+                            <% } else{ %>
+                                <label class="checkbox-inline"><input type="checkbox" value="" id="pay">유료</label>
+                            <% } %>
+                    </div><!-- /col-md-2 -->
+
+
+                    <div class="col-md-2">
+                            <input type="text"  class="form-control" placeholder="가격" id = "price" value = '0' readonly>
+                    </div><!-- /col-md-2 -->
+
+                </div><!-- row -->
+            
+            
+            <br>
+
+            <div id="summernote"></div>
+
+
+            <script>
+                    var htmlTag = "<%=onerow[0]['description']%>";  
+                    var changeToText = $("<div></div>").html(htmlTag).text();
+                    document.getElementById("summernote").innerHTML = changeToText;
+                    console.log(changeToText); 
+            </script> 
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="text-center">
+                    <button type="button" class="btn btn-success btn-md text-center"  id = "saveBtn">수정하기</button>
+                    
+                </div>
+            </div>
+    <% } %>
+            <!-- <div class="output"></div> -->
+
+
+            <script>
+            $('#summernote').summernote({
+                height: 400,                 // set editor height
+                minHeight: null,             // set minimum height of editor
+                maxHeight: null,             // set maximum height of editor
+                focus: true                  // set focus to editable area after initializing summernote
+            });
+            </script>
+
+
+    </div>
+
+
+    <% include ../footer %>
+ 
+    <script>
+ $(document).ready(function(){
+    //저장버튼 클릭
+    $(document).on('click', '#saveBtn', function () {
+        //파일업로드 사진 유무 확인
+        var fileupload = $("#fileupload").val();      
+        if(fileupload == null || fileupload == undefined || fileupload == ''){
+            alert("사진을 확인해주세요.");
+        }else{
+            saveImage();
+        }        
+      });
+ });
+
+    //이미지 저장
+    function saveImage() {
+
+
+        var formData = new FormData($('#imageform')[0]);
+        $.ajax({
+            url: '/write/bigwritesaveimage',
+            type: "POST",
+            processData: false,
+            contentType: false,
+            data: formData,
+            async : false,
+            success: function (data) {
+                if (data['result'] == 'success') {
+                    console.log('사진업로드!성공!');
+                    var imagepath = data['path'];
+                    
+                    //이미지 패스 넘겨주기
+                    saveContent(imagepath);
+                }
+            },
+            error: function (jqXHR, textStatus, err) {
+                //show error message
+                alert('죄송합니다. 작업중 오류가 발생했습니다.' + "상태 : " + textStatus + ', error : ' + err);
+            }
+        });
+    }
+
+    //데이터 업데이트!
+    function saveContent(imagepath) {
+        //값 가져오기
+        var langSelect = document.getElementById("section");               //분류
+        var bignum = $("#bignum").val();                   
+        //var sectionvalue = langSelect.options[langSelect.selectedIndex].value;
+        var sectiontext = langSelect.options[langSelect.selectedIndex].text;
+        
+        var langSelect2 = document.getElementById("lang");               //분류
+        var lang = langSelect2.options[langSelect2.selectedIndex].text;
+        var fileurl = $("#fileurl").val();                                  //파일url
+        var title = $("#title").val();                                      //제목
+        var mainclose = $("#mainclose").is(":checked");                     //메인비공개
+        var close = $("#close").is(":checked");                             //비공개
+        var pay = $("#pay").is(":checked");                                 //유료
+        var price = $("#price").val();                                       //가격
+        var summernoteContent = $('#summernote').summernote('code');         //썸머노트(설명)
+        var imagepath = imagepath;
+        var chkresult = checkContent(sectiontext, fileurl, title);
+
+        // //유효성 검사가 완료되었으면
+        if (chkresult) {
+            $.ajax({
+                url: '/write/bigmodiy',
+                dataType: 'json',
+                type: 'post',
+                data: {
+                    bignum:bignum,
+                    sectiontext:sectiontext,
+                    fileurl:fileurl,
+                    title:title,
+                    mainclose:mainclose,
+                    close:close,
+                    pay:pay,
+                    price:price,
+                    summernoteContent: summernoteContent,
+                    imagepath:imagepath,
+                    lang:lang
+                },
+                success: function (data) {
+                    if (data['result'] == 'success') {
+                        alert(data['tocken']);
+                        location.reload();
+                    }else if(data['result'] == 'fail'){
+                        alert(data['tocken']);
+                    }
+                },
+                error: function (jqXHR, textStatus, err) {
+                    //show error message
+                    alert('죄송합니다. 작업중 오류가 발생했습니다.' + "상태 : " + textStatus + ', error : ' + err);
+                }
+            });
+        }
+    }
+
+    //유효성 체크 -  유효성 검사가 완료되면 true를 리턴한다.
+    function checkContent(sectiontext, fileurl, title) {
+        if (sectiontext == '분류') {
+            alert('분류를 선택해주세요.');
+            return false;
+        }
+
+        if (title == null || title == '' || title == undefined) {
+            alert('대분류 제목을 작성해주세요.');
+            return false;
+        }
+        return true;
+    }
+    </script>
+                 
+  </body>
+
+</html>

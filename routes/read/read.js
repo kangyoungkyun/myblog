@@ -271,9 +271,6 @@ router.get('/read/bigmodify', function (req, res, next) {
 });
 
 
-
-
-
 /* 글 포스트 보기 */
 router.get('/read/readpostgul', function (req, res, next) {
 

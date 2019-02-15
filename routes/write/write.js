@@ -355,6 +355,72 @@ router.post('/write/writepostimagedelete', function (req, res, next) {
 
 
 
+//대분류 글 수정
+router.get('/write/bigmodiy', function (req, res, next) {
+
+  var bignum = req.query.num;       //대분류 pk 값
+
+  loger.info(bignum);
+
+  var sql2 = 'select * from bigTbl where bignum = ?';
+  client.query(sql2, [bignum], function (err2, onerow, results) {
+    if (err2) {
+      loger.error('대분류 글 하나 조회 문장에 오류가 있습니다. - /write/bigmodiy - /write.js');
+      loger.error(err2);
+    } else {
+      //대분류 메뉴명 가져옴
+      selectMenuQuery(function (err, menuResult) {
+        if (err) {
+          loger.info(err);
+        } else {
+          if (menuResult.length == 0) {
+            res.render('write/bigmodiy', {
+              rows: undefined,
+              onerow: onerow
+            });
+          } else {
+
+            //수정할 대분류 글과 왼쪽 사이드 메뉴명 넘기기
+            res.render('write/bigmodiy', {
+              rows: menuResult,
+              onerow: onerow,
+            });
+          }
+        }
+      });
+    }
+  });
+});
+
+/* 대분류 수정 액션 */
+router.post('/write/bigmodiy',function (req, res, next) {
+  loger.info('대분류 수정 진입  - /write/bigmodiy - write.js');
+
+  var bignum = req.body.bignum;
+  var section = req.body.sectiontext;
+  var fileurl = req.body.fileurl;
+  var title = req.body.title;
+  var mainclose = req.body.mainclose;
+  var pay = req.body.pay;
+  var close = req.body.close;
+  var price = req.body.price;
+  var summernoteContent = req.body.summernoteContent;
+  var imagepath = req.body.imagepath;
+  var lang = req.body.lang;
+
+  //update ABCDE set column1='xyz' where no='3'
+  var updatesql = 'update bigTbl set title = ? ,description = ? ,close = ? ,pay = ?,mainclose = ?, section = ?, price = ?, fileurl = ?, image = ? , lang = ? where bignum = ?';
+  var params = [title, summernoteContent, close, pay , mainclose, section, price,fileurl ,imagepath,lang, bignum];
+  client.query(updatesql, params, function (err, rows, fields) {
+    if (err) {
+      loger.error('대분류 update 쿼리에 오류가 있습니다. - /write/bigmodiy - write.js');
+      loger.error(err);
+      res.send({ result: 'fail' , tocken:'수정실패'});
+    } else {
+        res.send({ result: 'success' , tocken:'수정성공'});
+    }
+  });
+});
 
 
 module.exports = router;

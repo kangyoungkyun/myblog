@@ -33,10 +33,19 @@
 
                             <% } else { %>
                             <div class="col-sm-4 col-lg-4 col-md-4">
+
+                                    <%if (whoami != undefined) { %>
+                                        <%if (whoami == 'abcnt') { %>
+                                            <div class="pull-right"><a href="/write/bigmodiy?num=<%=rows[i]['bignum']%>" class="btn btn-default">수정</a></div>
+                                        <% } %>
+                                    <% } %>
+
+                                    
+                                    
                                     <div class="thumbnail">
                                         <img src="<%=rows[i]['image']%>" alt="" style="width: 135px; height: 180px">
                                         <div class="caption">
-                                            <!-- <h4 class="pull-right">₩ <%=rows[i]['price']%></h4> -->
+                                             
                                             <%if (rows[i]['section'] == '영상' ) { %>
                                             <h4><a href="/read/readbigmiddle?num=<%=rows[i]['bignum']%>"><%=rows[i]['title']%></a>
                                             <% } else { %>
@@ -46,7 +55,9 @@
         
                                             <p id="description<%=i%>"></p>
         
+                                            
                                         </div>
+                                       
                                     </div>
                                     <script>
                                             var htmlTag = "<%=rows[i]['description']%>";  

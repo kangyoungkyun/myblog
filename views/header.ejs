@@ -14,15 +14,31 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                  <li>
-                      <a href="/write/bigwrite">대분류(강좌개설)</a>
-                  </li>
-                  <li>
-                      <a href="/write/middlewrite">중분류(소제목)</a>
-                  </li>
-                  <li>
-                      <a href="/write/write">소분류(영상글쓰기)</a>
-                  </li>
+                    <%if (whoami != undefined) { %>
+                        <%if (whoami == 'abcnt') { %>
+                            <li>
+                                <a href="/write/bigwrite">대분류(강좌개설)</a>
+                            </li>
+                            <li>
+                                <a href="/write/middlewrite">중분류(소제목)</a>
+                            </li>
+                            <li>
+                                <a href="/write/write">소분류(영상글쓰기)</a>
+                            </li>
+                            <li>
+                                <a href="/write/writepost">포스터쓰기</a>
+                            </li>
+                            <li>
+                                    <a href="/login/logout">로그아웃</a>
+                            </li>
+                        <% } %>   
+                    <% } else { %>  
+
+                        <li>
+                                <a href="/login/login">로그인</a>
+                        </li>
+
+                    <% } %>   
                   <!-- <li>
                         <a href="/apply/apply">신청하기</a>
                  </li>
@@ -33,12 +49,6 @@
                 <li>
                     <a href="/read/bigmodify">대분류조회</a>
                 </li> -->
-                <li>
-                    <a href="/write/writepost">포스터쓰기</a>
-                </li>
-                <li>
-                    <a href="/login/login">로그인</a>
-                </li>
               </ul>
 
           </div>

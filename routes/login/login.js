@@ -138,7 +138,30 @@ router.post('/login/usersignup', function (req, res, next) {
 });
 
 
-
+/* 로그아웃  page. */
+router.get('/login/logout', function (req, res, next) {
+  req.session.destroy(function () {
+    res.locals.whoami = undefined;
+    res.locals.email = undefined;
+    selectMenuQuery(function(err, menuResult) {
+      if(err){
+        loger.info(err);
+      }else{
+        if(menuResult.length == 0){
+            //대분류 제목이 없을 경우
+            var ud = undefined;
+            res.render('index',{
+              rows:ud
+            });
+        }else{
+          res.render('index',{
+            rows:menuResult
+          });
+        }
+      }
+    });
+  });
+});
 
 
 

@@ -46,13 +46,24 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
 
   loger.info("공통페이지 진입 - app.js");
-  var sessionID = req.sessionID;                                  // 세션 ID
-  loger.info("세션 아이디 : " + sessionID);
- 
-next();
+  //var sessionID = req.sessionID;                                  // 세션 ID
+  //loger.info("세션 아이디 : " + sessionID);
+
+  //로그인한 유저
+  if (req.session.nickname) {
+    //로그인 한 유저의 닉네임을 ejs view 에서도 사용할 수 있게 설정
+    res.locals.email = req.session.authId;
+    res.locals.whoami = req.session.nickname;
+
+  } else {
+    res.locals.email = undefined;
+    res.locals.whoami = undefined;
+  }
+
+  next();
 });
 
 //사용자 정의 모듈 추출

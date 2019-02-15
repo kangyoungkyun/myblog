@@ -1,0 +1,32 @@
+2019-02-15 09:34:42.339 +0900 - error: 유저 가입시 정보 삽입 쿼리 문장에 오류가 있습니다. - login.js - /login/usersignup
+2019-02-15 09:34:42.340 +0900 - error:  message=ER_BAD_FIELD_ERROR: Unknown column 'position' in 'field list', stack=Error: ER_BAD_FIELD_ERROR: Unknown column 'position' in 'field list'
+    at Query.Sequence._packetToError (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at PBKDF2.crypto.pbkdf2 [as ondone] (/Users/wipia/Desktop/myblog/routes/login/login.js:114:30), code=ER_BAD_FIELD_ERROR, errno=1054, sqlMessage=Unknown column 'position' in 'field list', sqlState=42S22, index=0, sql=insert into userTbl (id, pw, position, stop, stopdate ,salt) values ('abcnt','abcnt@naver.com','RikUcc56yu2Uuy5tXnjkJ/hSdexdJbYDp3n6NWAWhvT+sJYVUuFSii2tSHQMv+mTt/7Ww0KKZMpdnzi9UGTLvA==','n','n','hv/Aw7ZUqf1MmjOj9ixVQVEeCKJG5rRk8LhrC5IZ/uqT7k6YG9/l+0j3zRTkl0YKkfrh9QNPO/p7qtvwZ5zTQg==')
+2019-02-15 09:35:49.970 +0900 - error: 유저 가입시 정보 삽입 쿼리 문장에 오류가 있습니다. - login.js - /login/usersignup
+2019-02-15 09:35:49.971 +0900 - error:  message=ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: 'n' for column 'stopdate' at row 1, stack=Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: 'n' for column 'stopdate' at row 1
+    at Query.Sequence._packetToError (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/wipia/Desktop/myblog/node_modules/mysql/lib/Connection.js:200:25)
+    at PBKDF2.crypto.pbkdf2 [as ondone] (/Users/wipia/Desktop/myblog/routes/login/login.js:114:30), code=ER_TRUNCATED_WRONG_VALUE, errno=1292, sqlMessage=Incorrect datetime value: 'n' for column 'stopdate' at row 1, sqlState=22007, index=0, sql=insert into userTbl (nickname, id, pw, stop, stopdate ,salt) values ('abcnt','abcnt@naver.com','80SECDBSX0LHxN8PBxwddg+D9LB/zA5YfnfF/PeDJSaYSLL42cK/s+Ob38K1Rf7ibryyMcHReWZndAY0ps04Cw==','n','n','PJ+ohS2p2N4smGN2dMePwXCTElkqpv1EU7cE8jx939MYACpP4KeIkZfQhNk8/a7OS2fB1zN41aTVlthK3JH86A==')

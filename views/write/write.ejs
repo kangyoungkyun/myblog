@@ -117,6 +117,7 @@
                     var html = '<option>중분류</option>';
                     for (var i = 0; i < data['data'].length; i++) {
                         var middletitlenum = data['data'][i]['middlenum'];
+                        var middletitle = data['data'][i]['title'];
                         html += '<option value= ' + middletitlenum + '>' + middletitle + '</option>';
                     }
 

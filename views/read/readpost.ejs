@@ -11,9 +11,16 @@
         
               <%if (postonerow != undefined) { %>
                 
-                <h1><%=postonerow[0]['title']%></h1>
-
+                <h1><%=postonerow[0]['title']%>
                 
+                    <%if (whoami != undefined) { %>
+                        <%if (whoami == 'abcnt') { %>
+                            <div class="pull-right"><a href="/write/postmodiy?postnum=<%=postonerow[0]['postnum']%>&middlenum=<%=postonerow[0]['middlenum']%>" class="btn btn-default">수정</a></div>
+                        <% } %>
+                    <% } %>
+                
+                </h1>
+
                 <p class="lead">
                     by <a href="#"><%=postonerow[0]['author']%></a>
                 </p>
@@ -29,8 +36,6 @@
                         <div class="text-center">
                             <iframe width="560" height="315" src="<%=postonerow[0]['videourl']%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-
-
                 <hr>
 
                 <!-- Post Content -->

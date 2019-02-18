@@ -141,7 +141,7 @@
           height: 500,
           callbacks: {
             onImageUpload: function (files, editor, welEditable) {
-                console.log("사진업로드 콜백 함수 작동");
+                
                 for (var i = files.length - 1; i >= 0; i--) {
                     sendFile(files[i], this);
                 }
@@ -156,7 +156,7 @@
 
     //사진 파일 저장
     function sendFile(file, el, welEditable) {
-        console.log("사진업로드 콜백 함수 진입");
+        
         var form_data = new FormData();
         form_data.append('file', file);
         $.ajax({
@@ -167,7 +167,6 @@
             contentType: false,
             processData: false,
             success: function (url) {
-                alert('사진저장성공');
                 $('#summernote').summernote('editor.insertImage', url['url']);
             }
         });

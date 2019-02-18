@@ -1,0 +1,154 @@
+
+    <% include ../head %>
+
+    <% include ../header %>
+
+    <div class="col-md-9">
+        <br>
+        <br>
+        <br>
+           <!-- <div>bignum : <%=onerow[0]['bignum']%></div>
+           <div>middlenum : <%=onerow[0]['middlenum']%></div> -->
+           <input type="text" class="hidden" id="middlenum" value="<%=onerow[0]['middlenum']%>">
+
+                <div class="row"> 
+                    <div class="col-md-4">
+                        <select title=“대분류” class="form-control" id="bigtitle">
+                            <option>대분류</option>
+                            <%if (bigmenurows != undefined) { %>
+                                <% for (var i = 0; i < bigmenurows.length; i++) { %>
+
+                                    <%if (onerow[0]['bignum'] == bigmenurows[i]['bignum']) { %>
+                                <option value="<%= bigmenurows[i]['bignum'] %>" selected><%=bigmenurows[i]['title']%></option>        
+                                    <% } else { %>
+                                <option value="<%= bigmenurows[i]['bignum'] %>"><%=bigmenurows[i]['title']%></option>
+                                    <% } %>
+                            <% } %>
+                            
+                            <% } else { %>
+                                <option value="">강좌가 없습니다</option>
+                            <% } %>
+                        </select>
+                    </div><!-- /col-md-4 -->
+
+
+                    <div class="col-md-6">
+                    <input type="text" id = "middletitle" class="form-control" aria-label="중분류 제목" placeholder="중분류 제목" value="<%=onerow[0]['title']%>">
+                    </div>
+
+                    <div class="col-md-2">
+                            <label class="checkbox-inline"><input type="checkbox" id="close">비공개</label>
+                    </div><!-- /col-md-2 -->
+
+                </div><!-- row -->
+            
+            
+            <br>
+
+            <!-- 썸머노트 -->
+            <div id="summernote"></div>
+
+            <script>
+                var htmlTag = "<%=onerow[0]['description']%>";  
+                var changeToText = $("<div></div>").html(htmlTag).text();
+                document.getElementById("summernote").innerHTML = changeToText;
+                console.log(changeToText); 
+            </script> 
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="text-center">
+                    <button type="button" class="btn btn-success btn-md text-center" id = "saveBtn">수정</button>
+                    
+                </div>
+            </div>
+ 
+            <div class="output"></div>
+
+
+            <script>
+            $('#summernote').summernote({
+                height: 400,                 // set editor height
+                minHeight: null,             // set minimum height of editor
+                maxHeight: null,             // set maximum height of editor
+                focus: true                  // set focus to editable area after initializing summernote
+            });
+            </script>
+
+
+    </div>
+
+
+    <% include ../footer %>
+ 
+    <script>
+    $(document).ready(function(){
+        //저장버튼 클릭
+        $(document).on('click', '#saveBtn', function () {
+            saveContent();
+        });
+    });
+
+
+    //데이터 저장
+    function saveContent() {
+            //값 가져오기
+            var middlenum = $("#middlenum").val();    
+            var bigSelect = document.getElementById("bigtitle");               //대분류 pk
+            var bignum = bigSelect.options[bigSelect.selectedIndex].value;
+            var bigtext = bigSelect.options[bigSelect.selectedIndex].text;
+            
+            var middletitle = $("#middletitle").val();                          //중분류제목
+            var close = $("#close").is(":checked");                             //비공개
+            var summernoteContent = $('#summernote').summernote('code');        //썸머노트(중분류설명)
+
+            var chkresult = checkContent(bigtext, middletitle);
+            //유효성 검사가 완료되었으면
+            if (chkresult) {
+                $.ajax({
+                    url: '/write/middlemodiy',
+                    dataType: 'json',
+                    type: 'post',
+                    data: {
+                        bignum: bignum,
+                        middlenum:middlenum,
+                        middletitle: middletitle,
+                        close: close,
+                        summernoteContent: summernoteContent
+                    },
+                    success: function (data) {
+                        if (data['result'] == 'success') {
+                            alert(data['tocken']);
+                            location.reload();
+                        }else if(data['result'] == 'fail'){
+                            alert(data['tocken']);
+                        }
+                    },
+                    error: function (jqXHR, textStatus, err) {
+                        //show error message
+                        alert('죄송합니다. 작업중 오류가 발생했습니다.' + "상태 : " + textStatus + ', error : ' + err);
+                    }
+                });
+            }
+        }
+   
+
+        //유효성 체크 -  유효성 검사가 완료되면 true를 리턴한다.
+        function checkContent(bigtext, middletitle) {
+            if (bigtext == '대분류') {
+                alert('분류를 선택해주세요.');
+                return false;
+            }
+
+            if (middletitle == null || middletitle == '' || middletitle == undefined) {
+                alert('제목을 작성해주세요.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+                 
+  </body>
+
+</html>

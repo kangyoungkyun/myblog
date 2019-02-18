@@ -408,7 +408,6 @@ router.post('/write/bigmodiy',function (req, res, next) {
   var imagepath = req.body.imagepath;
   var lang = req.body.lang;
 
-  //update ABCDE set column1='xyz' where no='3'
   var updatesql = 'update bigTbl set title = ? ,description = ? ,close = ? ,pay = ?,mainclose = ?, section = ?, price = ?, fileurl = ?, image = ? , lang = ? where bignum = ?';
   var params = [title, summernoteContent, close, pay , mainclose, section, price,fileurl ,imagepath,lang, bignum];
   client.query(updatesql, params, function (err, rows, fields) {
@@ -417,11 +416,84 @@ router.post('/write/bigmodiy',function (req, res, next) {
       loger.error(err);
       res.send({ result: 'fail' , tocken:'수정실패'});
     } else {
-        res.send({ result: 'success' , tocken:'수정성공'});
+      res.send({ result: 'success' , tocken:'수정성공'});
     }
   });
 });
 
+
+//중분류 글 수정
+router.get('/write/middlemodiy', function (req, res, next) {
+
+  var middlenum = req.query.num;       //중분류 pk 값
+
+  loger.info(middlenum);
+
+  var sql2 = 'select * from middleTbl where middlenum = ?';
+  client.query(sql2, [middlenum], function (err2, onerow, results) {
+    if (err2) {
+      loger.error('대분류 글 하나 조회 문장에 오류가 있습니다. - /write/middlemodiy - /write.js');
+      loger.error(err2);
+    } else {
+      //대분류 메뉴명 가져옴
+      selectMenuQuery(function (err, menuResult) {
+        if (err) {
+          loger.info(err);
+        } else {
+          if (menuResult.length == 0) {
+            res.render('write/middlemodiy', {
+              rows: undefined,
+              onerow: undefined,
+              bigmenurows:undefined
+            });
+          } else {
+
+            //bigTbl 조회 해서 값 뿌려주기
+            var sql3 = 'select * from bigTbl';
+            client.query(sql3, function (err3, bigmenurows, results2) {
+              if (err3) {
+                loger.error('대분류 조회 문장에 오류가 있습니다. - /write/middlemodiy - /write.js');
+                loger.error(err3);
+              } else {
+                //수정할 대분류 글과 왼쪽 사이드 메뉴명 넘기기
+                res.render('write/middlemodiy', {
+                  rows: menuResult,
+                  onerow: onerow,
+                  bigmenurows:bigmenurows
+                });
+              }
+            });
+          }
+        }
+      });
+    }
+  });
+});
+
+
+/* 대분류 수정 액션 */
+router.post('/write/middlemodiy',function (req, res, next) {
+  loger.info('중분류 수정 진입  - /write/middlemodiy - write.js');
+
+  var bignum = req.body.bignum;
+  var middlenum = req.body.middlenum;
+  var middletitle = req.body.middletitle;
+  var close = req.body.close;
+  var summernoteContent = req.body.summernoteContent;
+
+
+  var updatesql = 'update middleTbl set title = ? , description = ? , close = ?, bignum = ?  where middlenum = ?';
+  var params = [middletitle, summernoteContent, close, bignum, middlenum];
+  client.query(updatesql, params, function (err, rows, fields) {
+    if (err) {
+      loger.error('중분류 update 쿼리에 오류가 있습니다. - /write/middlemodiy - write.js');
+      loger.error(err);
+      res.send({ result: 'fail' , tocken:'수정실패'});
+    } else {
+        res.send({ result: 'success' , tocken:'수정성공'});
+    }
+  });
+});
 
 module.exports = router;
 loger.info("메모리 로딩 완료. - write.js");

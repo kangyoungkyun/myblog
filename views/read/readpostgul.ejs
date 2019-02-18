@@ -11,10 +11,18 @@
         
               <%if (postonerow != undefined) { %>
                 
-                <h1><%=postonerow[0]['title']%></h1>
+
+
+
+                <h1><%=postonerow[0]['title']%> 
+                    <%if (whoami != undefined) { %>
+                        <%if (whoami == 'abcnt') { %>
+                            <div class="pull-right"><a href="/write/postmodiy?postnum=<%=postonerow[0]['postnum']%>&middlenum=<%=postonerow[0]['middlenum']%>" class="btn btn-default">수정</a></div>
+                        <% } %>
+                    <% } %>
+                </h1>
 
                 <hr>
-    
                     <div class="row">
                             <div class="col-lg-4">편집일시: <%=postonerow[0]['regdate']%></div>
                             <div class="col-lg-4"></div>

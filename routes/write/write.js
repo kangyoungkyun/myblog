@@ -471,7 +471,7 @@ router.get('/write/middlemodiy', function (req, res, next) {
 });
 
 
-/* 대분류 수정 액션 */
+/* 중분류 수정 액션 */
 router.post('/write/middlemodiy',function (req, res, next) {
   loger.info('중분류 수정 진입  - /write/middlemodiy - write.js');
 
@@ -487,6 +487,108 @@ router.post('/write/middlemodiy',function (req, res, next) {
   client.query(updatesql, params, function (err, rows, fields) {
     if (err) {
       loger.error('중분류 update 쿼리에 오류가 있습니다. - /write/middlemodiy - write.js');
+      loger.error(err);
+      res.send({ result: 'fail' , tocken:'수정실패'});
+    } else {
+        res.send({ result: 'success' , tocken:'수정성공'});
+    }
+  });
+});
+
+
+
+
+//포스트 글 수정
+router.get('/write/postmodiy', function (req, res, next) {
+
+  var postnum = req.query.postnum;       //post pk 값
+  var middlenum = req.query.middlenum;       //middle pk 값
+  loger.info(postnum);
+  loger.info(middlenum);
+  
+  var sql1 = 'select * from bigTbl';
+  client.query(sql1, function (err1, bigrows, results) {
+    if (err1) {
+      loger.error('대분류 메뉴 조회 문장에 오류가 있습니다. - /write/writemodiy - /write.js');
+      loger.error(err1);
+    } else {
+
+      var sql11 = 'select * from middleTbl';
+      client.query(sql11, function (err11, middlerows, results) {
+        if (err11) {
+          loger.error('중분류 메뉴 조회 문장에 오류가 있습니다. - /write/writemodiy - /write.js');
+          loger.error(err11);
+        } else {
+          var sql2 = 'select * from middleTbl where middlenum = ?';
+          client.query(sql2, [middlenum], function (err2, middlerow, results) {
+            if (err2) {
+              loger.error('대분류 글 하나 조회 문장에 오류가 있습니다. - /write/writemodiy - /write.js');
+              loger.error(err2);
+            } else {
+              //대분류 메뉴명 가져옴
+              selectMenuQuery(function (err, menuResult) {
+                if (err) {
+                  loger.info(err);
+                } else {
+                  if (menuResult.length == 0) {
+                    res.render('write/writemodiy', {
+                      rows: undefined,
+                      middlerow: middlerow,
+                      bigrows:bigrows,
+                      middlerows:middlerows
+                    });
+                  } else {
+    
+                    var sql3 = 'select * from postTbl where postnum = ?';
+                    client.query(sql3, [postnum], function (err3, postrow, results) {
+                      if (err3) {
+                        loger.error('post 조회 문장에 오류가 있습니다. - /write/writemodiy - /write.js');
+                        loger.error(err3);
+                      } else {
+    
+                        //수정할 대분류 글과 왼쪽 사이드 메뉴명 넘기기 + post 관련 데이터 넘기기
+                        res.render('write/writemodiy', {
+                          rows: menuResult,
+                          middlerow: middlerow,
+                          bigrows: bigrows,
+                          middlerows:middlerows,
+                          postrow:postrow
+                        });
+    
+                      }
+                    });
+                  }
+                }
+              });
+            }
+          });
+        }
+      })
+    }
+  });
+});
+
+/* 포스트 수정 액션 */
+router.post('/write/writemodiy',function (req, res, next) {
+  loger.info('중분류 수정 진입  - /write/middlemodiy - write.js');
+ 
+  var postnum = req.body.postnum;
+  var videourl = req.body.videourl;
+  var videotime = req.body.videotime;
+  var posttitle = req.body.posttitle;
+  var cansee = req.body.cansee;
+  var close = req.body.close;
+  var middlenum = req.body.middlenum;
+  var summernoteContent = req.body.summernoteContent;
+
+
+
+
+  var updatesql = 'update postTbl set title = ? , description = ? , close = ?, cansee = ? , middlenum = ?, videourl = ?, videotime = ? where postnum = ?';
+  var params = [posttitle, summernoteContent, close, cansee, middlenum, videourl,videotime,postnum];
+  client.query(updatesql, params, function (err, rows, fields) {
+    if (err) {
+      loger.error('post update 쿼리에 오류가 있습니다. - /write/writemodiy - write.js');
       loger.error(err);
       res.send({ result: 'fail' , tocken:'수정실패'});
     } else {

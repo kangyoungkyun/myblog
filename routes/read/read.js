@@ -164,10 +164,79 @@ router.get('/read/readpost', function (req, res, next) {
 
 /* 마이 포스트 글 중분류 보기 */
 router.get('/read/readbigmiddlegul', function (req, res, next) {
+  loger.info("마이 포스트 글 중분류 보기");
 
-  var bignum = req.query.num;       //대분류 pk 값
+  var bignum = req.query.num;                                     //대분류 pk 값
+  var pagenum = req.query.pagenum;   
 
-  loger.info(bignum);
+  if(pagenum == undefined){
+    //현제 페이지
+    var curPage = 1;
+  }else{
+    var curPage = pagenum;
+  }
+
+  loger.info("curPage : " + curPage);
+
+  //페이지당 게시물 수 : 한 페이지 당 10개 게시물
+  var page_size = 10;
+  //페이지의 갯수 : 1 ~ 10개 페이지
+  var page_list_size = 10;
+  //limit 변수
+  var no = "";
+  //전체 게시물의 숫자
+  var totalPageCount = 0;
+
+  //소분류 글 조회 카운터!
+  var queryString = 'select count(*) as cnt from postTbl where middlenum in ' +
+    '(select m.middlenum from bigTbl b, middleTbl m where b.bignum = m.bignum ' +
+    'and b.bignum = ?) ORDER BY postnum DESC';
+
+  client.query(queryString, [bignum], function (error2, data) {
+    if (error2) {
+      loger.info(error2 + "소분류 글 조회 조회 실패  - /read/readbigmiddlegul - /read.js");
+      return
+    }
+    //전체 게시물의 숫자
+    totalPageCount = data[0].cnt
+
+
+    loger.info("현재 페이지 : " + curPage, "전체 게시물 수 : " + totalPageCount);
+
+    //전체 페이지 갯수
+    if (totalPageCount < 0) {
+      totalPageCount = 0
+    }
+
+    var totalPage = Math.ceil(totalPageCount / page_size);            // 전체 페이지수    (전체 게시물 수 / 페지이 세로 사이즈 10)
+    var totalSet = Math.ceil(totalPage / page_list_size);             // 전체 세트수     (전체 페이지 수 / 페이지 가로 사이즈 10)
+    var curSet = Math.ceil(curPage / page_list_size)                  // 현재 셋트 번호   (클릭한 페이지 번호 / 페이지 가로 사이즈 10)
+    var startPage = ((curSet - 1) * 10) + 1                           // 현재 세트내 출력될 시작 페이지
+    var endPage = (startPage + page_list_size) - 1;                   // 현재 세트내 출력될 마지막 페이지
+    
+    
+    //현재페이지가 0 보다 작으면
+    if (curPage < 0) {
+    no = 0
+    } else {
+    //0보다 크면 limit 함수에 들어갈 첫번째 인자 값 구하기
+    no = (curPage - 1) * 10
+    }
+    
+    loger.info('[0] curPage : ' + curPage + ' | [1] page_list_size : ' + page_list_size + ' | [2] page_size : ' + page_size + ' | [3] totalPage : ' + totalPage + ' | [4] totalSet : ' + totalSet + ' | [5] curSet : ' + curSet + ' | [6] startPage : ' + startPage + ' | [7] endPage : ' + endPage)
+    
+    
+    var pasing = {
+      "curPage": curPage,
+      "page_list_size": page_list_size,
+      "page_size": page_size,
+      "totalPage": totalPage,
+      "totalSet": totalSet,
+      "curSet": curSet,
+      "startPage": startPage,
+      "endPage": endPage
+      };
+
 
   var sql2 = 'select * from bigTbl where bignum = ?';
   client.query(sql2, [bignum], function (err2, onerow, results) {
@@ -183,7 +252,8 @@ router.get('/read/readbigmiddlegul', function (req, res, next) {
           if (menuResult.length == 0) {
             res.render('read/readbigmiddlegul', {
               rows: undefined,
-              onerow: onerow
+              onerow: onerow,
+              pasing:pasing
             });
           } else {
             //중분류 글 조회
@@ -195,12 +265,12 @@ router.get('/read/readbigmiddlegul', function (req, res, next) {
               } else { 
                 //중분류 글 존재.
                 if(middlerows.length > 0){
-                  
+
                   //소분류 글 조회
                   var sql4 = 'select * from postTbl where middlenum in ' +
                             '(select m.middlenum from bigTbl b, middleTbl m where b.bignum = m.bignum ' +
-                            'and b.bignum = ?) ORDER BY postnum DESC';
-                  client.query(sql4, [bignum], function (err4, postrows, results) {
+                            'and b.bignum = ?) ORDER BY postnum DESC limit ?,?';
+                  client.query(sql4, [bignum , no, page_size], function (err4, postrows, results) {
                     if (err4) {
                       loger.error('소분류 글 조회 문장에 오류가 있습니다. - /read/readbigmiddlegul - /read.js');
                       loger.error(err4);
@@ -212,7 +282,8 @@ router.get('/read/readbigmiddlegul', function (req, res, next) {
                           rows: menuResult,
                           onerow: onerow,
                           middlerows: middlerows,
-                          postrows: postrows
+                          postrows: postrows,
+                          pasing:pasing
                         });
 
                         //소분류 글 존재 (x)   
@@ -221,7 +292,8 @@ router.get('/read/readbigmiddlegul', function (req, res, next) {
                           rows: menuResult,
                           onerow: onerow,
                           middlerows: middlerows,
-                          postrows: undefined
+                          postrows: undefined,
+                          pasing:pasing
                         });
                       }
                     }
@@ -232,7 +304,8 @@ router.get('/read/readbigmiddlegul', function (req, res, next) {
                     rows: menuResult,
                     onerow: onerow,
                     middlerows: undefined,
-                    postrows: undefined
+                    postrows: undefined,
+                    pasing:pasing
                   });
                 }
               }
@@ -242,10 +315,8 @@ router.get('/read/readbigmiddlegul', function (req, res, next) {
       });
     }
   });
+  });
 });
-
-
-
 
 
 /* 대분류 수정 */
@@ -358,6 +429,129 @@ router.get('/read/readpostgul', function (req, res, next) {
       }
     }
   });
+});
+
+
+
+
+
+/* 마이 포스트 글 중분류 보기 */
+router.get('/read/readbigmiddlegul/:cur', function (req, res, next) {
+
+  var bignum = req.query.num;       //대분류 pk 값
+
+  loger.info("마이 포스트 글 중분류 보기");
+
+  //페이지당 게시물 수 : 한 페이지 당 10개 게시물 (세로 게시물)
+  var page_size = 10;
+  //페이지의 갯수 : 1 ~ 10개 페이지           (가로 게시물)
+  var page_list_size = 10;
+  //limit 변수
+  var no = "";
+  //전체 게시물의 숫자
+  var totalPageCount = 0;
+
+  //소분류 글 조회
+  var queryString =  'select * from postTbl where middlenum in ' +
+              '(select m.middlenum from bigTbl b, middleTbl m where b.bignum = m.bignum ' +
+              'and b.bignum = ?) ORDER BY postnum DESC';
+
+  client.query(queryString,[bignum] ,function (error2, data) {
+  if (error2) {
+    loger.log(error2 + "소분류 글 조회 조회 실패  - /read/readbigmiddlegul - /read.js");
+  return
+  }
+  //전체 게시물의 숫자
+  totalPageCount = data[0].cnt
+  
+  //현제 페이지
+  var curPage = req.params.cur;
+  
+  loger.log("현재 페이지 : " + curPage, "전체 페이지 : " + totalPageCount);
+  
+    //전체 페이지 갯수
+    if (totalPageCount < 0) {
+      totalPageCount = 0
+    }
+  
+  
+
+});
+
+
+  // var sql2 = 'select * from bigTbl where bignum = ?';
+  // client.query(sql2, [bignum], function (err2, onerow, results) {
+  //   if (err2) {
+  //     loger.error('대분류 글 하나 조회 문장에 오류가 있습니다. - /read/readbigmiddlegul - /read.js');
+  //     loger.error(err2);
+  //   } else {
+  //     //대분류 메뉴명 가져옴
+  //     selectMenuQuery(function (err, menuResult) {
+  //       if (err) {
+  //         loger.info(err);
+  //       } else {
+  //         if (menuResult.length == 0) {
+  //           res.render('read/readbigmiddlegul', {
+  //             rows: undefined,
+  //             onerow: onerow
+  //           });
+  //         } else {
+  //           //중분류 글 조회
+  //           var sql3 = 'select * from middleTbl where bignum = ?';
+  //           client.query(sql3, [bignum], function (err3, middlerows, results) {
+  //             if (err3) {
+  //               loger.error('중분류 글 조회 문장에 오류가 있습니다. - /read/readbigmiddlegul - /read.js');
+  //               loger.error(err3);
+  //             } else { 
+  //               //중분류 글 존재.
+  //               if(middlerows.length > 0){
+                  
+  //                 //소분류 글 조회
+  //                 var sql4 = 'select * from postTbl where middlenum in ' +
+  //                           '(select m.middlenum from bigTbl b, middleTbl m where b.bignum = m.bignum ' +
+  //                           'and b.bignum = ?) ORDER BY postnum DESC';
+  //                 client.query(sql4, [bignum], function (err4, postrows, results) {
+  //                   if (err4) {
+  //                     loger.error('소분류 글 조회 문장에 오류가 있습니다. - /read/readbigmiddlegul - /read.js');
+  //                     loger.error(err4);
+  //                   } else {
+
+  //                     //소분류 글 존재할때
+  //                     if (postrows.length > 0) {
+  //                       res.render('read/readbigmiddlegul', {
+  //                         rows: menuResult,
+  //                         onerow: onerow,
+  //                         middlerows: middlerows,
+  //                         postrows: postrows
+  //                       });
+
+  //                       //소분류 글 존재 (x)   
+  //                     } else {
+  //                       res.render('read/readbigmiddlegul', {
+  //                         rows: menuResult,
+  //                         onerow: onerow,
+  //                         middlerows: middlerows,
+  //                         postrows: undefined
+  //                       });
+  //                     }
+  //                   }
+  //                 });
+
+  //               } else {
+  //                 res.render('read/readbigmiddlegul', {
+  //                   rows: menuResult,
+  //                   onerow: onerow,
+  //                   middlerows: undefined,
+  //                   postrows: undefined
+  //                 });
+  //               }
+  //             }
+  //           });
+  //         }
+  //       }
+  //     });
+  //   }
+  // });
 });
 
 module.exports = router;

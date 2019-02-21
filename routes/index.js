@@ -15,6 +15,7 @@ router.get('/', function (req, res, next) {
     if(err){
       loger.info(err);
     }else{
+      loger.info(menuResult.length);
       if(menuResult.length == 0){
           //대분류 제목이 없을 경우
           var ud = undefined;

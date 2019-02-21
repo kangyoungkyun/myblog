@@ -5,8 +5,21 @@
 var mysql = require('mysql');
 
 
+//app.js 포트 번호 80 변경하기
+//mysql myblog 커넥터
+// var client = mysql.createConnection({
+//   host: "115.71.239.175",
+//   user:'abcnt',
+//   password:'1111',
+//   database:'mydb2',
+//   dateStrings: 'date'
+// });
 
-//mysql 커넥터
+
+
+//app.js 포트 번호 3000번 변경하기
+
+//mysql 로컬 커넥터
 var client = mysql.createConnection({
   host: "localhost",
   user:'root',
@@ -16,7 +29,9 @@ var client = mysql.createConnection({
 });
 
 
-//mysql 커넥터
+
+
+//mysql 주보 사랑 커넥터
 // var client = mysql.createConnection({
 //   host: "115.71.239.29",
 //   user:'kk12111',
